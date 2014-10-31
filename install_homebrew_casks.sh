@@ -5,9 +5,7 @@ brew install caskroom/cask/brew-cask
 
 apps=(
     alfred
-    #dropbox
     google-chrome
-    #google-drive
     firefox
     iterm2
     sublime-text
@@ -15,6 +13,9 @@ apps=(
     dbvisualizer
     shiftit
     xquartz
+    sourcetree
+    #dropbox
+    #google-drive
 )
 
 # Install apps to /Applications
