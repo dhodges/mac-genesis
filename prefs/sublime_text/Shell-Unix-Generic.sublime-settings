@@ -1,0 +1,10 @@
+{
+	"extensions":
+	[
+		"bashrc",
+		"bash_profile",
+		"inputrc",
+		"profile",
+		".rvmrc"
+	]
+}
