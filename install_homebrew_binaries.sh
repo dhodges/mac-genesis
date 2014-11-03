@@ -14,9 +14,13 @@ binaries=(
   rbenv-bundler
   ruby-build
   redis
+  tmux
 )
 
 brew tap homebrew/versions
+
+echo "updating homebrew..."
+brew update
 
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
