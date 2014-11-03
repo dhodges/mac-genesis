@@ -8,3 +8,11 @@ cp org.shiftitapp.ShiftIt.plist ~/Library/Preferences
 [[ -e ~/bin/subl ]] || ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' ~/bin/subl
 
 cp sublime_text/* "$HOME/Library/Application Support/Sublime Text 2/Packages/User"
+
+# Sublime Text Packages:
+#
+# BracketHighlighter
+# Color Highlighter
+# GitGutter
+# Pretty JSON
+# Table Editor
