@@ -37,3 +37,6 @@ brew cleanup
 
 # launch postgresql on login
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+
+# Remember to install XCode and run `xcode-select --install`
+# to install the command-line dev tools

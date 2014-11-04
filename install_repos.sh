@@ -3,6 +3,6 @@
 mkdir -p ~/build
 cd ~/build
 
-[[ -e dhodges_dotfiles ]] || git clone git@github.com:dhodges/dotfiles.git dhodges_dotfiles
-[[ -e solarized        ]] || git clone git://github.com/altercation/solarized.git
+[[ -e dotfiles  ]] || git clone git@github.com:dhodges/dotfiles.git dhodges_dotfiles
+[[ -e solarized ]] || git clone git://github.com/altercation/solarized.git
 

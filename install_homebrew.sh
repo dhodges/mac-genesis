@@ -12,3 +12,6 @@ fi
 
 # Update homebrew recipes
 brew update
+
+# Remember to install XCode and run `xcode-select --install`
+# to install command-line dev tools
