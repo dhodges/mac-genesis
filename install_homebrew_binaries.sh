@@ -50,7 +50,7 @@ echo "Linking emacs to launch on login:"
 ln -sfv /usr/local/opt/emacs/*.plist ~/Library/LaunchAgents
 
 echo
-echo "Remember to install XCode and run `xcode-select --install'"
+echo "Remember to install XCode and run 'xcode-select --install'"
 echo "to install the command-line dev tools."
 echo
 

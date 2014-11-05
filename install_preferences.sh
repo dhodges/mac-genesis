@@ -1,11 +1,10 @@
-#!/bin/sh -e
+#!/bin/sh -xe
 
 cd prefs
 
 PREFS_DIR=~/Library/Preferences
 
 # iterm doesn't respect symlinks (grrr)
-
 cp com.googlecode.iterm2.plist $PREFS_DIR/com.googlecode.iterm2.plist
 
 [[ -f $PREFS_DIR/org.shiftitapp.ShiftIt.plist ]]                    || ln -sfv `pwd`/org.shiftitapp.ShiftIt.plist $PREFS_DIR
