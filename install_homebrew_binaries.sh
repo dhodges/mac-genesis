@@ -46,6 +46,9 @@ echo
 # apple install of java for yosemite
 # http://support.apple.com/kb/DL1572
 
+# oracle installation of jdk v7:
+# http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
+
 #psql template1 -f /usr/local/share/postgis/postgis.sql
 #psql template1 -f /usr/local/share/postgis/.sql
 #psql template1 -f /usr/local/share/postgis/postgis.sql
