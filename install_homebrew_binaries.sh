@@ -34,6 +34,10 @@ brew linkapps
 echo "cleaning up homebrew..."
 brew cleanup
 
+echo "installing ruby..."
+rbenv install 2.0.0-p353
+echo
+
 # launch postgresql on login
 echo "Linking postgresql to launch on login:"
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents

@@ -4,7 +4,10 @@ cd prefs
 
 PREFS_DIR=~/Library/Preferences
 
-[[ -f $PREFS_DIR/com.googlecode.iterm2.plist  ]]                    || ln -sfv `pwd`/com.googlecode.iterm2.plist  $PREFS_DIR
+# iterm doesn't respect symlinks (grrr)
+
+cp com.googlecode.iterm2.plist $PREFS_DIR/com.googlecode.iterm2.plist
+
 [[ -f $PREFS_DIR/org.shiftitapp.ShiftIt.plist ]]                    || ln -sfv `pwd`/org.shiftitapp.ShiftIt.plist $PREFS_DIR
 [[ -f $PREFS_DIR/com.runningwithcrayons.Alfred-Preferences.plist ]] || ln -sfv `pwd`/com.runningwithcrayons.Alfred-Preferences.plist $PREFS_DIR
 [[ -f $PREFS_DIR/com.runningwithcrayons.alfred-2.plist ]]           || ln -sfv `pwd`/com.runningwithcrayons.alfred-2.plist $PREFS_DIR
