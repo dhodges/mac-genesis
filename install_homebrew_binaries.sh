@@ -35,9 +35,11 @@ echo "cleaning up homebrew..."
 brew cleanup
 
 # launch postgresql on login
-echo "Linking postgresql, to launch on login:"
+echo "Linking postgresql to launch on login:"
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-#ln -sfv /usr/local/opt/postgresql92/*.plist ~/Library/LaunchAgents
+
+echo "Linking emacs to launch on login:"
+ln -sfv /usr/local/opt/emacs/*.plist ~/Library/LaunchAgents
 
 echo
 echo "Remember to install XCode and run `xcode-select --install'"
