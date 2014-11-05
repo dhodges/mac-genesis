@@ -34,8 +34,12 @@ brew linkapps
 echo "cleaning up homebrew..."
 brew cleanup
 
-echo "installing ruby..."
+echo "installing ruby 2.0.0..."
 rbenv install 2.0.0-p353
+echo
+
+echo "installing ruby 2.1.1..."
+rbenv install 2.1.1
 echo
 
 # launch postgresql on login
