@@ -1,4 +1,4 @@
-#!/bin/sh -x +e
+#!/bin/sh -e
 
 mkdir -p ~/projects
 cd ~/projects
