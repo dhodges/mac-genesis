@@ -3,6 +3,9 @@
 echo "installing homebrew cask..."
 brew install caskroom/cask/brew-cask
 
+echo "updating homebrew cask..."
+brew cask update
+
 apps=(
     alfred
     google-chrome
@@ -14,6 +17,7 @@ apps=(
     shiftit
     xquartz
     sourcetree
+    screenhero
     #dropbox
     #google-drive
 )
