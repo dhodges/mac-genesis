@@ -1,30 +1,29 @@
 #!/bin/sh -e
 
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-SOURCE_DIR=$THIS_DIR/prefs
-PREFS_DIR=~/Library/Preferences
+PREFS_DIR=$THIS_DIR/prefs
 
 SUBL_USER_DIR="$HOME/Library/Application Support/Sublime Text 2/Packages/User"
 
 
 # neither Terminal nor iTerm respect symlinks (grrr)
-cp $SOURCE_DIR/com.googlecode.iterm2.plist $PREFS_DIR
-cp $SOURCE_DIR/com.apple.Terminal.plist    $PREFS_DIR
+cp $PREFS_DIR/com.googlecode.iterm2.plist ~/Library/Preferences
+cp $PREFS_DIR/com.apple.Terminal.plist    ~/Library/Preferences
 
-cd $PREFS_DIR
+cd ~/Library/Preferences
 
-[[ -f com.runningwithcrayons.Alfred-Preferences.plist ]] || ln -sfv $SOURCE_DIR/com.runningwithcrayons.Alfred-Preferences.plist
-[[ -f com.runningwithcrayons.alfred-2.plist ]]           || ln -sfv $SOURCE_DIR/com.runningwithcrayons.alfred-2.plist
-[[ -f org.shiftitapp.ShiftIt.plist ]]                    || ln -sfv $SOURCE_DIR/org.shiftitapp.ShiftIt.plist
+[[ -f com.runningwithcrayons.Alfred-Preferences.plist ]] || ln -sfv $PREFS_DIR/com.runningwithcrayons.Alfred-Preferences.plist
+[[ -f com.runningwithcrayons.alfred-2.plist ]]           || ln -sfv $PREFS_DIR/com.runningwithcrayons.alfred-2.plist
+[[ -f org.shiftitapp.ShiftIt.plist ]]                    || ln -sfv $PREFS_DIR/org.shiftitapp.ShiftIt.plist
 
 cd $HOME
 
-[[ -d ~/.dbvis ]]   || ln -sfv $SOURCE_DIR/_dbvis .dbvis
+[[ -d ~/.dbvis ]]   || ln -sfv $PREFS_DIR/_dbvis .dbvis
 
 [[ -e ~/bin/subl ]] || ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' ~/bin/subl
 
 mkdir -p "$SUBL_USER_DIR"
-cp $SOURCE_DIR/sublime_text/* "$SUBL_USER_DIR"
+cp $PREFS_DIR/sublime_text/* "$SUBL_USER_DIR"
 
 
 # Sublime Text 2 Package Manager installation:

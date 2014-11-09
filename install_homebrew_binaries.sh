@@ -42,7 +42,7 @@ echo "installing ruby 2.1.1..."
 rbenv install 2.1.1
 echo
 
-# launch postgresql on login
+# launch at login
 echo "Linking postgresql to launch on login:"
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
@@ -59,7 +59,3 @@ echo
 
 # oracle installation of jdk v7:
 # http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
-
-#psql template1 -f /usr/local/share/postgis/postgis.sql
-#psql template1 -f /usr/local/share/postgis/.sql
-#psql template1 -f /usr/local/share/postgis/postgis.sql
