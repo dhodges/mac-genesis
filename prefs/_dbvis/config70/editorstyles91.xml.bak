@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DbVisualizer>
+  <SyntaxStyles>
+    <SyntaxStyle id="0" bg="" effect="0" ec="" font="0" fg="#000000" sc="" />
+    <SyntaxStyle id="1" bg="" effect="0" ec="" font="2" fg="#00b200" sc="" />
+    <SyntaxStyle id="2" bg="" effect="0" ec="" font="2" fg="#00b200" sc="" />
+    <SyntaxStyle id="6" bg="" effect="0" ec="" font="1" fg="#0000ff" sc="" />
+    <SyntaxStyle id="7" bg="" effect="0" ec="" font="1" fg="#0000ff" sc="" />
+    <SyntaxStyle id="8" bg="" effect="0" ec="" font="1" fg="#cc6600" sc="" />
+    <SyntaxStyle id="3" bg="" effect="0" ec="" font="0" fg="#ff0000" sc="" />
+    <SyntaxStyle id="4" bg="" effect="0" ec="" font="0" fg="#ff0000" sc="" />
+    <SyntaxStyle id="5" bg="" effect="0" ec="" font="1" fg="#ff00ff" sc="" />
+    <SyntaxStyle id="9" bg="" effect="0" ec="" font="1" fg="#000000" sc="" />
+    <SyntaxStyle id="13" bg="#c0c0c0" effect="0" ec="" font="0" fg="#000000" sc="" />
+    <SyntaxStyle id="11" bg="" effect="2" ec="#ff0000" font="0" fg="" sc="#ff0000" />
+  </SyntaxStyles>
+</DbVisualizer>
