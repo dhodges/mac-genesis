@@ -33,6 +33,7 @@ cp $PREFS_DIR/sublime_text/* "$SUBL_USER_DIR"
 #
 # BracketHighlighter
 # Color Highlighter
+# Git
 # GitGutter
 # Pretty JSON
 # Table Editor
