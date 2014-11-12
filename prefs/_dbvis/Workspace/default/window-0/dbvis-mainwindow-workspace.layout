@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LayoutPersistence>
-    <DockingManager activeFrame="object-view" frameState="0"
-        persistenceName="0" version="20">
-        <Bounds height="768" width="1024" x="0" y="0"/>
+    <DockingManager frameState="0" persistenceName="0" version="20">
+        <Bounds height="768" width="1024" x="208" y="23"/>
         <DockContext autohideHeight="200" autohideWidth="200"
             available="1" canMode="15" currentDockSide="8"
-            currentMode="4" dockId="49489" dockedHeight="200"
+            currentMode="4" dockId="14404" dockedHeight="200"
             dockedWidth="200" initAutohideHeight="200"
             initAutohideWidth="200" initIndex="0" initMode="4"
             initPosition="1" initSide="8" key="object-view">
             <UndockedBounds height="500" width="800" x="-1" y="-1"/>
             <InitUndockedBounds height="500" width="800" x="-1" y="-1"/>
-            <DockPreviousState dockId="49489" fcId="1931" index="0"
+            <DockPreviousState dockId="14404" fcId="18377" index="0"
                 mode="4" rootId="2" side="8" type="close">
                 <Bounds height="690" width="593" x="0" y="0"/>
-                <DockChild dockId="49489"/>
-                <DockParentState ccId="59438" dockId="1931" orientation="1">
-                    <DockChild dockId="1931"/>
+                <DockChild dockId="14404"/>
+                <DockParentState ccId="30765" dockId="18377" orientation="1">
+                    <DockChild dockId="18377"/>
                     <DockChild dockId="-1"/>
                 </DockParentState>
             </DockPreviousState>
         </DockContext>
         <ContainerContainer dockId="26671" initiallyEven="0"
             orientation="0" proportionLayout="0">
-            <ContainerContainer dockId="59438" initiallyEven="0"
+            <ContainerContainer dockId="30765" initiallyEven="0"
                 orientation="1" proportionLayout="0">
-                <FrameContainer dockId="1931" selectedIndex="0">
+                <FrameContainer dockId="18377" selectedIndex="0">
                     <DockableFrame key="object-view"/>
                 </FrameContainer>
                 <Workspace acceptDockableFrame="0"/>
