@@ -3,16 +3,17 @@
 # see: http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac
 
 binaries=(
-  node
   ack
-  hub
   elasticsearch090
   git
+  hub
+  node
   postgresql
   postgis
+  pstree
   rbenv
-  rbenv-bundler
   ruby-build
+  rbenv-bundler
   redis
   tmux
   watch
