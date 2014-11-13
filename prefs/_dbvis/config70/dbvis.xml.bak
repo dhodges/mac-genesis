@@ -263,7 +263,7 @@
     <ShowDialogWhenCloseDynamicNodeTab>true</ShowDialogWhenCloseDynamicNodeTab>
     <ShowDialogWhenCreateDatabase>false</ShowDialogWhenCreateDatabase>
     <ShowDialogWhenDoubleClickInCellWithControlChars>true</ShowDialogWhenDoubleClickInCellWithControlChars>
-    <ShowDialogWhenDoubleClickInDatabasesTab>true</ShowDialogWhenDoubleClickInDatabasesTab>
+    <ShowDialogWhenDoubleClickInDatabasesTab>false</ShowDialogWhenDoubleClickInDatabasesTab>
     <ShowNullAs>(null)</ShowNullAs>
     <ShowPrimaryKeysForTables>true</ShowPrimaryKeysForTables>
     <ShowReleaseNotes>true</ShowReleaseNotes>
@@ -672,7 +672,7 @@
       <Alias>gustavo_development</Alias>
       <Url />
       <Driver>PostgreSQL</Driver>
-      <Userid>david</Userid>
+      <Userid>davidh</Userid>
       <Profile>auto</Profile>
       <Type>postgresql</Type>
       <Password>rSk+E2+Snss=</Password>

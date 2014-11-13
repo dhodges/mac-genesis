@@ -703,7 +703,7 @@
       <Alias>rowlf_development</Alias>
       <Url />
       <Driver>PostgreSQL</Driver>
-      <Userid>david</Userid>
+      <Userid>davidh</Userid>
       <Profile>auto</Profile>
       <Type>postgresql</Type>
       <Password>rSk+E2+Snss=</Password>
