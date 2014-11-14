@@ -4,6 +4,7 @@
 
 binaries=(
   ack
+  bash-completion
   elasticsearch090
   git
   hub
