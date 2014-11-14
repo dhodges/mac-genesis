@@ -12,7 +12,6 @@
 # Ask for the administrator password upfront
 sudo -v
 
-echo "This script will make your Mac awesome"
 
 ###############################################################################
 # General UI/UX
@@ -170,7 +169,8 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 echo ""
 echo "Use column view in all Finder windows by default"
-defaults write com.apple.finder FXPreferredViewStyle Clmv
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 echo ""
 echo "Avoiding the creation of .DS_Store files on network volumes"
@@ -188,6 +188,22 @@ echo "Enabling snap-to-grid for icons on the desktop and in other icon views"
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
+echo ""
+echo "Show item info underneath the icons on the desktop"
+/usr/libexec/PlistBuddy -c "Set DesktopViewSettings:IconViewSettings:labelOnBottom true" ~/Library/Preferences/com.apple.finder.plist
+
+
+echo ""
+echo "Disable the warning before emptying the Trash"
+defaults write com.apple.finder WarnOnEmptyTrash -bool false
+
+echo ""
+echo "Empty Trash securely by default"
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+echo ""
+echo "Show the ~/Library folder"
+chflags nohidden ~/Library
 
 ###############################################################################
 # Dock & Mission Control
@@ -339,6 +355,15 @@ sudo pmset -a displaysleep 0
 echo ""
 echo "Disable annoying backswipe in Chrome"
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool false
+
+echo ""
+echo "Use plain text mode for new TextEdit documents"
+defaults write com.apple.TextEdit RichText -int 0
+
+echo ""
+echo "Enable the debug menu in Disk Utility"
+defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
+defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 ###############################################################################
 # Kill affected applications
