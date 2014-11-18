@@ -16,8 +16,7 @@
             </DockableBarList>
         </DockableBarContainer>
     </DockableBarManager>
-    <DockingManager activeFrame="databases" frameState="0"
-        persistenceName="1" version="20">
+    <DockingManager frameState="0" persistenceName="1" version="20">
         <Bounds height="768" width="1024" x="208" y="23"/>
         <DockContext autohideHeight="0" autohideWidth="0" available="1"
             canMode="15" currentDockSide="8" currentMode="4"
