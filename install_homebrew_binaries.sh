@@ -5,6 +5,7 @@
 binaries=(
   ack
   bash-completion
+  cheat
   elasticsearch090
   git
   hub
@@ -33,8 +34,19 @@ brew install emacs --cocoa --srgb
 
 brew linkapps
 
+# launch at login
+echo "Linking postgresql to launch on login:"
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+
+echo "Linking emacs to launch on login:"
+ln -sfv /usr/local/opt/emacs/*.plist ~/Library/LaunchAgents
+
 echo "cleaning up homebrew..."
 brew cleanup
+
+echo "installing ruby 1.9.3..."
+rbenv install 1.9.3-p392
+echo
 
 echo "installing ruby 2.0.0..."
 rbenv install 2.0.0-p353
@@ -43,13 +55,6 @@ echo
 echo "installing ruby 2.1.1..."
 rbenv install 2.1.1
 echo
-
-# launch at login
-echo "Linking postgresql to launch on login:"
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-
-echo "Linking emacs to launch on login:"
-ln -sfv /usr/local/opt/emacs/*.plist ~/Library/LaunchAgents
 
 echo
 echo "Remember to install XCode and run 'xcode-select --install'"
