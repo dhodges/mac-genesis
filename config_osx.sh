@@ -205,6 +205,12 @@ echo ""
 echo "Show the ~/Library folder"
 chflags nohidden ~/Library
 
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:gridSpacing  integer 100"  ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:iconSize     integer  32"  ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showIconPreview bool true" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:showItemInfo    bool true" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:textSize     integer  10"  ~/Library/Preferences/com.apple.finder.plist
+
 ###############################################################################
 # Dock & Mission Control
 ###############################################################################
@@ -330,14 +336,6 @@ echo ""
 echo "Disable hibernation (speeds up entering sleep mode)"
 sudo pmset -a hibernatemode 0
 
-echo ""
-echo "Remove the sleep image file to save disk space"
-sudo rm /Private/var/vm/sleepimage
-echo "Creating a zero-byte file insteadÃ¢â‚¬Â¦"
-sudo touch /Private/var/vm/sleepimage
-echo "Ã¢â‚¬Â¦and make sure it can't be rewritten"
-sudo chflags uchg /Private/var/vm/sleepimage
-
 # echo ""
 # echo "Disable the sudden motion sensor as it's not useful for SSDs"
 # sudo pmset -a sms 0
@@ -366,7 +364,7 @@ defaults write com.apple.DiskUtility DUDebugMenuEnabled -bool true
 defaults write com.apple.DiskUtility advanced-image-options -bool true
 
 ###############################################################################
-# Kill affected applications
-###############################################################################
+# flush the OS X preference cache
+killall -u $(whoami) cfprefsd
 
 echo "Done!"
