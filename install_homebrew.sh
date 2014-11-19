@@ -19,6 +19,7 @@ binaries=(
   cheat
   elasticsearch090
   git
+  gpg
   hub
   node
   postgresql
