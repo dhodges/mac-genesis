@@ -21,6 +21,7 @@ binaries=(
   git
   gpg
   hub
+  mysql
   node
   postgresql
   postgis
