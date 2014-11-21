@@ -16,11 +16,14 @@ brew tap homebrew/versions
 binaries=(
   ack
   bash-completion
+  bzr
   cheat
   csshX
   elasticsearch090
   git
   gpg
+  go
+  hg
   hub
   node
   postgresql
