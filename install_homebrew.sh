@@ -22,7 +22,6 @@ binaries=(
   git
   gpg
   hub
-  mysql
   node
   postgresql
   postgis
@@ -47,10 +46,6 @@ brew linkapps
 echo
 echo "Linking postgresql to launch on login:"
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-
-echo
-echo "Linking mysql to launch on login:"
-ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
 echo
 echo "Linking emacs to launch on login:"
