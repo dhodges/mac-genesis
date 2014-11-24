@@ -17,6 +17,7 @@ binaries=(
   ack
   bash-completion
   cheat
+  csshX
   elasticsearch090
   git
   gpg
