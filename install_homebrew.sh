@@ -21,8 +21,8 @@ binaries=(
   csshX
   elasticsearch090
   git
-  gpg
   go
+  gpg
   hg
   hub
   node
