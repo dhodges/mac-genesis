@@ -19,6 +19,7 @@ binaries=(
   bzr
   cheat
   csshX
+  ctags-exuberant
   elasticsearch090
   git
   go
