@@ -13,6 +13,9 @@ brew update
 echo "tapping homebrew/versions..."
 brew tap homebrew/versions
 
+echo "tapping homebrew/boneyard..."
+brew tap homebrew/boneyard
+
 binaries=(
   ack
   bash-completion
