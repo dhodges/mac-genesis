@@ -38,6 +38,7 @@ binaries=(
   rbenv-bundler
   redis
   tmux
+  vlc
   watch
   wget
 )
