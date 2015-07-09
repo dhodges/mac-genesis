@@ -95,7 +95,7 @@ brew cask update
 apps=(
     alfred
     google-chrome
-    #firefox
+    firefox
     iterm2
     sublime-text
     #atom
