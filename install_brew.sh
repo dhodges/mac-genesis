@@ -109,12 +109,6 @@ apps=(
     #handbrake
 )
 
-# NB: dbvisualiser only provides an installer
-# which still needs to be run (manually).
-# Typically placed somewhere like:
-#
-# `/opt/homebrew-cask/Caskroom/dbvisualizer/9.1.11/DbVisualizer Installer.app`
-
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo
