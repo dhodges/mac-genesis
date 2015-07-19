@@ -6,6 +6,7 @@ THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PREFS_DIR="$THIS_DIR/prefs/sublime_text"
 
 cp $PREFS_DIR/* "$USER_DIR"
+mv "$USER_DIR"/*.sublime-theme "$PKG_DIR"
 
 packages=(
     jisaacks/GitGutter
@@ -35,8 +36,12 @@ for pkg in ${packages[@]}
 do
     name=`echo $pkg | cut -d'/' -f2`
 
-    echo "installing SublimeText package: $name"
-    echo
-    rm -rf "$name"
-    git clone "https://github.com/${pkg}.git"
+    if [[ -d $name ]]; then
+        echo "pkg already installed: $name"
+    else
+        echo "installing pkg: $name"
+        rm -rf "$name"
+        git clone "https://github.com/${pkg}.git"
+        echo
+    fi
 done
