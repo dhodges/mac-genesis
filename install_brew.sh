@@ -86,49 +86,6 @@ echo
 echo "installing updated grep..."
 brew install homebrew/dupes/grep
 
-echo "installing homebrew cask..."
-brew install caskroom/cask/brew-cask
-
-echo "updating homebrew cask..."
-brew cask update
-
-apps=(
-    alfred
-    google-chrome
-    firefox
-    iterm2
-    sublime-text
-    #atom
-    dbvisualizer
-    shiftit
-    xquartz
-    sourcetree
-    screenhero
-    #dropbox
-    #google-drive
-    #handbrake
-)
-
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
-echo
-echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
-
-# reveal these cask app links to Alfred
-brew cask alfred link
-
-echo
-echo "tapping caskroom/fonts..."
-brew tap caskroom/fonts
-
-fonts=(
-    font-inconsolata
-)
-
-echo "installing fonts..."
-brew cask install ${fonts[@]}
-
 echo
 echo "cleaning up homebrew..."
 brew cleanup
