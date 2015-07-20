@@ -17,24 +17,3 @@ files=(
 for file in ${files[@]}; do
     [[ -f ~/Library/Preferences/$file ]] || ln -sfv $PREFS_DIR/$file
 done
-
-
-[[ -e ~/bin/subl ]] || ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' ~/bin/subl
-
-# not much symlink love from sublimeT either (double-grrr)
-SUBL_USER_DIR="$HOME/Library/Application Support/Sublime Text 2/Packages/User"
-mkdir -p "$SUBL_USER_DIR"
-cp $PREFS_DIR/sublime_text/* "$SUBL_USER_DIR"
-
-
-# Sublime Text 2 Package Manager installation:
-# https://sublime.wbond.net/installation#st2
-
-# Sublime Text Packages:
-#
-# BracketHighlighter
-# Color Highlighter
-# Git
-# GitGutter
-# Pretty JSON
-# Table Editor

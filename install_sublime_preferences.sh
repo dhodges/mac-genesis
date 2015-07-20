@@ -1,12 +1,16 @@
 #!/bin/sh -e
 
+# sublime text doesn't respect symlinks (*sigh*)
 PKG_DIR="$HOME/Library/Application Support/Sublime Text 2/Packages"
 USER_DIR="$PKG_DIR/User"
+mkdir -p "$USER_DIR"
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PREFS_DIR="$THIS_DIR/prefs/sublime_text"
 
 cp $PREFS_DIR/* "$USER_DIR"
-mv "$USER_DIR"/*.sublime-theme "$PKG_DIR"
+# mv "$USER_DIR"/*.sublime-theme "$PKG_DIR"
+
+[[ -e ~/bin/subl ]] || ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' ~/bin/subl
 
 packages=(
     jisaacks/GitGutter
@@ -45,3 +49,7 @@ do
         echo
     fi
 done
+
+# Sublime Text 2 Package Manager installation:
+# https://sublime.wbond.net/installation#st2
+
