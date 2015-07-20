@@ -28,6 +28,7 @@ apps=(
     xquartz
     sourcetree
     screenhero
+    java7
     #dropbox
     #google-drive
 )
