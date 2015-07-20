@@ -4,14 +4,17 @@ mkdir -p ~/projects
 cd ~/projects
 
 repos=(
-    waldorf
-    rowlf
-    gustavo
-    rizzo
-    scooter
-    rubberband
+    atlas
+    chef-repo
+    geo
+    geo-client
+    lpos-chef-repo
+    map_tile_loader
     pairing_station
+    remixer
+    spp_aws
     spp_boxen
+    spp_dashboard
 )
 
 for repo in ${repos[@]}; do
