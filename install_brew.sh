@@ -39,7 +39,6 @@ binaries=(
   rbenv-bundler
   redis
   tmux
-  vlc
   watch
   wget
 )
@@ -51,6 +50,9 @@ echo "installing (homebrew) emacs..."
 brew install emacs --cocoa --srgb
 
 brew linkapps
+
+echo "installing coffee-script (via npm)"
+npm install -g coffee-script
 
 echo
 echo "Linking postgresql to launch on login:"
