@@ -96,3 +96,11 @@ echo
 echo "Remember to install XCode and run 'xcode-select --install'"
 echo "to install the command-line dev tools."
 echo
+echo "To launch apache on startup:"
+echo "sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
+echo
+echo "To stop apache launching on startup:"
+echo "sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
+echo
+
+
