@@ -38,6 +38,7 @@ binaries=(
   ruby-build
   rbenv-bundler
   redis
+  terminal-notifier
   tmux
   watch
   wget
@@ -102,5 +103,3 @@ echo
 echo "To stop apache launching on startup:"
 echo "sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
 echo
-
-
