@@ -19,6 +19,7 @@ brew tap homebrew/boneyard
 binaries=(
   ack
   ag
+  autoenv
   bash-completion
   bzr
   cheat
