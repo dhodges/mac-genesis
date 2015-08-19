@@ -28,6 +28,8 @@ apps=(
     xquartz
     sourcetree
     screenhero
+    vagrant
+    virtualbox
     java7
     #dropbox
     #google-drive
