@@ -20,6 +20,7 @@ binaries=(
   ack
   ag
   autoenv
+  awscli
   bash-completion
   bzr
   cheat
