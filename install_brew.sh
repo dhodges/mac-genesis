@@ -58,6 +58,7 @@ npm install -g coffee-script
 
 echo
 echo "Linking postgresql to launch on login:"
+
 LAUNCH_DIR=~/Library/LaunchAgents
 [[ -f $LAUNCH_DIR/homebrew.mxcl.postgresql.plist ]] && rm $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
 ln -sfv /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
