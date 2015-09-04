@@ -8,7 +8,6 @@ THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 PREFS_DIR="$THIS_DIR/prefs/sublime_text"
 
 cp $PREFS_DIR/* "$USER_DIR"
-# mv "$USER_DIR"/*.sublime-theme "$PKG_DIR"
 
 [[ -e ~/bin/subl ]] || ln -s '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' ~/bin/subl
 
@@ -16,9 +15,7 @@ packages=(
     jisaacks/GitGutter
     surjikal/sublime-coffee-compile
     Xavura/CoffeeScript-Sublime-Plugin
-    revolunet/sublimetext-markdown-preview
     SublimeColors/Solarized
-    eklein/sublime-text-puppet
     drewda/cucumber-sublime2-bundle
     natew/ExpandSelectionByParagraph
     kemayo/sublime-text-2-git
@@ -32,6 +29,8 @@ packages=(
     iltempo/sublime-text-2-hash-syntax
     vkocubinsky/SublimeTableEditor
     farcaller/DashDoc
+    # to evaluate:
+    # aponxi/sublime-better-coffeescript
 )
 
 cd "$PKG_DIR"
@@ -43,6 +42,7 @@ do
     if [[ -d $name ]]; then
         echo "pkg already installed: $name"
     else
+        echo
         echo "installing pkg: $name"
         rm -rf "$name"
         git clone "https://github.com/${pkg}.git"
@@ -50,6 +50,5 @@ do
     fi
 done
 
-# Sublime Text 2 Package Manager installation:
-# https://sublime.wbond.net/installation#st2
-
+echo  "Sublime Text 2 Package Manager installation:"
+echo  "https://sublime.wbond.net/installation#st2"
