@@ -41,6 +41,7 @@ binaries=(
   ruby-build
   rbenv-bundler
   redis
+  rlwrap
   terminal-notifier
   tmux
   watch
