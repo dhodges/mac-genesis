@@ -24,10 +24,8 @@ done
 PG_DIR=/usr/local/var/postgres/
 [[ -f $PG_DIR/postgresql.conf ]] && mv $PG_DIR/postgresql.conf $PG_DIR/postgresql.conf.bak
 cp $PREFS_DIR/postgresql.conf $PG_DIR
-rm -rf ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
-ln -s $PG_DIR/postgresql.conf ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
 
-
+echo
 echo "done."
 echo
 echo "to launch postgresql on startup:"

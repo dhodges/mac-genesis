@@ -58,8 +58,9 @@ npm install -g coffee-script
 
 echo
 echo "Linking postgresql to launch on login:"
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-
+LAUNCH_DIR=~/Library/LaunchAgents
+[[ -f $LAUNCH_DIR/homebrew.mxcl.postgresql.plist ]] && rm $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
+ln -sfv /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
 
 # apple install of java for yosemite
 # http://support.apple.com/kb/DL1572
