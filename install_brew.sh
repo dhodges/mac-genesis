@@ -93,12 +93,16 @@ echo "cleaning up homebrew..."
 brew cleanup
 
 echo
-echo "Remember to install XCode and run 'xcode-select --install'"
-echo "to install the command-line dev tools."
-echo
 echo "To launch apache on startup:"
-echo "sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
+echo "    sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
 echo
-echo "To stop apache launching on startup:"
-echo "sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
+echo "To install passenger:"
+echo "    cd atlas"
+echo "    gem install passenger -v 4.0.29"
+echo "    passenger-install-apache2-module"
+echo "    sudo apachectl -k restart"
+echo
+echo "Some python essentials may also help:"
+echo "    sudo easy_install pip"
+echo "    sudo pip install virtualenvwrapper"
 echo
