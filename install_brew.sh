@@ -27,6 +27,7 @@ binaries=(
   csshX
   ctags-exuberant
   elasticsearch090
+  emacs
   git
   go
   gpg
@@ -49,9 +50,7 @@ binaries=(
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
 
-echo "installing (homebrew) emacs..."
-brew install emacs --cocoa --srgb
-
+echo
 brew linkapps
 
 echo "installing coffee-script (via npm)"
@@ -61,9 +60,6 @@ echo
 echo "Linking postgresql to launch on login:"
 ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 
-echo
-echo "Linking emacs to launch on login:"
-ln -sfv /usr/local/opt/emacs/*.plist ~/Library/LaunchAgents
 
 # apple install of java for yosemite
 # http://support.apple.com/kb/DL1572
