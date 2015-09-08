@@ -22,15 +22,12 @@ packages=(
     dzhibas/SublimePrettyJson
     lonelyplanet/AtlasTestRunner
     NaN1488/sublime-gem-browser
-    Monnoroch/ColorHighlighter
     facelessuser/BracketHighlighter
     CraigWilliams/BeautifyRuby
     irohiroki/RubyBlockConverter
     iltempo/sublime-text-2-hash-syntax
     vkocubinsky/SublimeTableEditor
     farcaller/DashDoc
-    # to evaluate:
-    # aponxi/sublime-better-coffeescript
 )
 
 cd "$PKG_DIR"
