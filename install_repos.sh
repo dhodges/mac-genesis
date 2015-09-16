@@ -16,16 +16,22 @@ cd ~/projects
 
 repos=(
     atlas
+    aws-mfa
+    blog
     chef-repo
     cloudformation
     geo
     lpos-chef-repo
     map_tile_loader
     pairing_station
+    performance_test
+    release_info
     remixer
     spp_aws
     spp_boxen
     spp_dashboard
+    spp_on_rails
+    spp_release
 )
 
 for repo in ${repos[@]}; do
