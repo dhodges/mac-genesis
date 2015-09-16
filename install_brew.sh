@@ -38,6 +38,7 @@ binaries=(
   postgis
   pstree
   rbenv
+  rlwrap
   ruby-build
   rbenv-bundler
   redis
