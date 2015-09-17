@@ -4,10 +4,10 @@
 mkdir -p ~/build
 cd ~/build
 
-[[ -e dotfiles  ]] || git clone git@github.com:dhodges/dotfiles.git dhodges_dotfiles
+[[ -e dotfiles  ]] || git clone git@github.com:dhodges/dotfiles.git dotfiles
 [[ -e solarized ]] || git clone git://github.com/altercation/solarized.git
 
-cd dhodges_dotfiles
+cd dotfiles
 ./bin/setupdotfiles
 
 
@@ -19,6 +19,7 @@ repos=(
     aws-mfa
     blog
     chef-repo
+    christo-extension
     cloudformation
     geo
     lpos-chef-repo
@@ -35,5 +36,5 @@ repos=(
 )
 
 for repo in ${repos[@]}; do
-    [[ -e ~/projects/$repo ]] || echo '' && git clone git@github.com:lonelyplanet/$repo.git
+    [[ -e ~/projects/$repo ]] || git clone git@github.com:lonelyplanet/$repo.git
 done
