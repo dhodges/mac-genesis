@@ -38,6 +38,8 @@ Then profit.
 
 ### Prior Art
 
-See: [https://github.com/lonelyplanet/spp_boxen](spp_boxen) for the previous SPP way of doing same. Based on puppet/boxen, this was considerably more complicated and brittle.
+* [https://github.com/lonelyplanet/spp_boxen](spp_boxen) for the previous SPP way of doing same. Based on puppet/boxen, this was considerably more complicated and brittle.
 
-See: [https://github.com/thoughtbot/laptop](thoughtbot/laptop) for a similar, slightly more complicated set of scripts.
+* [https://github.com/thoughtbot/laptop](thoughtbot/laptop) for a similar, slightly more complicated set of scripts.
+
+* [https://github.com/codekitchen/dinghy](github.com/codekitchen/dinghy)
