@@ -34,6 +34,7 @@ binaries=(
   hg
   hub
   node
+  phantomjs
   postgresql
   postgis
   pstree
