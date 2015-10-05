@@ -43,3 +43,5 @@ Then profit.
 * [https://github.com/thoughtbot/laptop](thoughtbot/laptop) for a similar, slightly more complicated set of scripts.
 
 * [https://github.com/codekitchen/dinghy](github.com/codekitchen/dinghy)
+
+* [https://github.com/lra/mackup](mackup)
