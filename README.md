@@ -3,7 +3,7 @@
 
 Mac development setup. Primarily my needs for work.
 
-These scripts are deliberately brain-dead-simple. They each just iterate over a short list.
+Deliberately brain-dead simple. Each script just iterates over a short list.
 
 First run these:
 ```
@@ -15,6 +15,8 @@ $ ./install_rubies.sh
 
 Then run these:
 ```
+# password for gpg is in LastPass
+
 $ gpg -d prefs.tgz.gpg > prefs.tgz && tar zxvf prefs.tgz
 $ ./install_preferences.sh
 $ ./install_sublime_preferences.sh
