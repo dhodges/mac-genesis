@@ -1,0 +1,28 @@
+
+* tweaks for OSX El Capitan
+** `brew install rbenv'
+** `brew install postgresql'
+
+mkdir -p ~/Library/LaunchAgents
+ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
+(launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist)
+
+** `brew cask install java'
+** `xcode-select --install' for cmd-line tools
+
+to install passenger
+see: https://github.com/phusion/passenger/issues/1630
+
+`brew install openssl' then:
+```
+export EXTRA_CFLAGS=-I/usr/local/opt/openssl/include
+export EXTRA_CXXFLAGS=-I/usr/local/opt/openssl/include
+export EXTRA_LDFLAGS=-L/usr/local/opt/openssl/lib
+passenger-install-apache2-module
+```
+
+hmmm...  running `passenger-install-apache2-module' fails with a compilation error:
+
+/Users/davidh/.rbenv/versions/2.1.0/lib/ruby/gems/2.1.0/gems/passenger-4.0.29/ext/libev/ev.c:970:42: error: '_Noreturn' keyword must precede function
+N
+B: this now happens on OSX Yosemite, too
