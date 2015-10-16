@@ -34,6 +34,7 @@ binaries=(
   hg
   hub
   node
+  openssl
   phantomjs
   postgresql
   postgis
@@ -102,8 +103,11 @@ echo "    sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.
 echo
 echo "To install passenger:"
 echo "    cd atlas"
-echo "    gem install passenger -v 4.0.29"
+echo "    gem install passenger -v 5.0.20"
 echo "    passenger-install-apache2-module"
+echo "    export EXTRA_CFLAGS='-I/usr/local/opt/openssl/include'"
+echo "    export EXTRA_CXXFLAGS='-I/usr/local/opt/openssl/include'"
+echo "    export EXTRA_LDFLAGS='-L/usr/local/opt/openssl/lib'"
 echo "    sudo apachectl -k restart"
 echo
 echo "Some python essentials may also help:"
