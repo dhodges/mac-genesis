@@ -30,9 +30,7 @@ apps=(
     screenhero
     vagrant
     virtualbox
-    java7
-    #dropbox
-    #google-drive
+    java
 )
 
 # Install apps to /Applications

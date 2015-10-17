@@ -21,13 +21,15 @@ binaries=(
   ag
   autoenv
   awscli
+  bash # v4
   bash-completion
   bzr
   cheat
+  coreutils
   csshX
   ctags-exuberant
-  elasticsearch090
   emacs
+  findutils # find, locate, updatedb, xargs
   git
   go
   gpg
@@ -35,7 +37,6 @@ binaries=(
   hub
   node
   openssl
-  phantomjs
   postgresql
   postgis
   pstree
@@ -54,7 +55,7 @@ binaries=(
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
 
-echo
+echo "linking homebrew apps..."
 brew linkapps
 
 echo "installing coffee-script (via npm)"
@@ -66,23 +67,6 @@ echo "Linking postgresql to launch on login:"
 LAUNCH_DIR=~/Library/LaunchAgents
 [[ -f $LAUNCH_DIR/homebrew.mxcl.postgresql.plist ]] && rm $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
 ln -sfv /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
-
-# apple install of java for yosemite
-# http://support.apple.com/kb/DL1572
-
-# oracle installation of jdk v7:
-# http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
-
-echo
-echo "installing GNU core utilities..."
-
-core_binaries=(
-    coreutils
-    findutils # find, locate, updatedb, xargs
-    bash      # bash v4
-)
-
-brew install ${core_binaries[@]}
 
 # Install more recent versions of some OS X tools
 echo
