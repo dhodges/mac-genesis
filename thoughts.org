@@ -11,3 +11,25 @@ ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
 ** `xcode-select --install' for cmd-line tools
 
 ** atlas needs gem libv8 >= 3.16.14.11
+** problems with NetExtender?
+advice from maciej.nowak (LP):
+https://lonelyplanet.slack.com/archives/general/p1445239233000064
+```
+You can start El Capitan in recovery mode.  Then Tools->Terminal.
+
+Then run:
+
+$csrutil disable
+$sudo chmod a+s /usr/sbin/pppd
+$csrutil enable
+
+This will allow you to set the permission that NetExtender needs.
+Then boot as normal and everything should be fine.
+The csrutil will ONLY work in recovery mode, so it has to be done in the manner I described above.
+```
+
+but see from nick.biddle: https://lonelyplanet.slack.com/archives/general/p1445257877000065
+```
+@maciej.nowak: please use the latest version of the VPN client found in the Mac App Store called “Sonicwall Mobile Defender.” Netextender has reached EOL. https://itunes.apple.com/us/app/sonicwall-mobile-connect/id822514576?mt=12
+```
+
