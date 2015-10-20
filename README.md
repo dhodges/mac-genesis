@@ -37,6 +37,11 @@ Then profit.
 
   - map CapsLock to Ctrl
 
+  - in System Preferences / Mission Control
+    - disable keyboard shortcuts (e.g, Ctrl-right, Ctrl-left)
+
+  - in System Preferences / Keyboard / Shortcuts
+    - disable keyboard shortcuts
 
 ### Prior Art
 
