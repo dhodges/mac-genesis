@@ -1,15 +1,7 @@
 
 * tweaks for OSX El Capitan
 
-** `brew install postgresql'
-
-mkdir -p ~/Library/LaunchAgents
-ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-(launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist)
-
-** `brew cask install java'
 ** `xcode-select --install' for cmd-line tools
-
 ** atlas needs gem libv8 >= 3.16.14.11
 ** problems with NetExtender?
 advice from maciej.nowak (LP):
@@ -32,4 +24,3 @@ but see from nick.biddle: https://lonelyplanet.slack.com/archives/general/p14452
 ```
 @maciej.nowak: please use the latest version of the VPN client found in the Mac App Store called “Sonicwall Mobile Defender.” Netextender has reached EOL. https://itunes.apple.com/us/app/sonicwall-mobile-connect/id822514576?mt=12
 ```
-
