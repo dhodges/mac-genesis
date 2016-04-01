@@ -46,6 +46,7 @@ binaries=(
   rbenv-bundler
   redis
   rlwrap
+  shellcheck
   terminal-notifier
   tmux
   watch
