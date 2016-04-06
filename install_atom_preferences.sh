@@ -15,6 +15,7 @@ extensions=(
   linter-ruby
   linter-sass-lint
   linter-shellcheck
+  open-recent
   synced-sidebar
   unity-ui
 )
