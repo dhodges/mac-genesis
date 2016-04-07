@@ -16,6 +16,7 @@ extensions=(
   linter-sass-lint
   linter-shellcheck
   open-recent
+  pigments
   synced-sidebar
   unity-ui
 )
