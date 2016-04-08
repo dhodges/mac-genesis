@@ -17,7 +17,9 @@ extensions=(
   linter-shellcheck
   open-recent
   pigments
+  pretty-json
   synced-sidebar
+  tabs-to-spaces
   unity-ui
 )
 
