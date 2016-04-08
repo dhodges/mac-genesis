@@ -6,7 +6,6 @@ extensions=(
   git-plus
   highlight-line
   linter
-  linter-coffeelint
   linter-eslint
   linter-js-yaml
   linter-jsonlint
