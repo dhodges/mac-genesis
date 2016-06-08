@@ -1,6 +1,7 @@
 #!/bin/sh -e
 
 extensions=(
+  align
   atom-alignment
   change-case
   git-plus
@@ -17,6 +18,7 @@ extensions=(
   open-recent
   pigments
   pretty-json
+  sublime-style-column-selection
   synced-sidebar
   tabs-to-spaces
   unity-ui
