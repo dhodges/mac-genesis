@@ -4,6 +4,7 @@ extensions=(
   align
   atom-alignment
   change-case
+  git-blame
   git-plus
   highlight-line
   linter
