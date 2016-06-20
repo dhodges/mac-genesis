@@ -14,7 +14,6 @@ extensions=(
   linter-markdownlint
   linter-package-json-validator
   linter-ruby
-  linter-sass-lint
   linter-shellcheck
   open-recent
   pigments
