@@ -10,11 +10,10 @@ fi
 echo "updating homebrew..."
 brew update
 
-echo "tapping homebrew/versions..."
+echo "tapping homebrew..."
 brew tap homebrew/versions
-
-echo "tapping homebrew/boneyard..."
 brew tap homebrew/boneyard
+brew tap homebrew/dupes
 
 binaries=(
   ack
@@ -33,6 +32,7 @@ binaries=(
   git
   go
   gpg
+  homebrew/dupes/grep
   hg
   hub
   node
@@ -55,8 +55,6 @@ binaries=(
 
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
-
-echo "linking homebrew apps..."
 brew linkapps
 
 echo "installing coffee-script (via npm)"
@@ -68,15 +66,6 @@ echo "Linking postgresql to launch on login:"
 LAUNCH_DIR=~/Library/LaunchAgents
 [[ -f $LAUNCH_DIR/homebrew.mxcl.postgresql.plist ]] && rm $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
 ln -sfv /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
-
-# Install more recent versions of some OS X tools
-echo
-echo "tapping homebrew/dupes..."
-brew tap homebrew/dupes
-
-echo
-echo "installing updated grep..."
-brew install homebrew/dupes/grep
 
 echo
 echo "cleaning up homebrew..."
