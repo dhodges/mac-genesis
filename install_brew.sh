@@ -32,6 +32,7 @@ binaries=(
   git
   go
   gpg
+  gpg-agent
   homebrew/dupes/grep
   hg
   hub
