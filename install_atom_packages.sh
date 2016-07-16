@@ -3,13 +3,14 @@
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ATOM_DIR=${HOME}/.atom
 mkdir -p $ATOM_DIR
-cp $THIS_DIR/prefs/atom/* $ATOM_DIR
 
 PKG_DIR=$ATOM_DIR/packages
 mkdir -p $PKG_DIR
 
 packages=(
   atom-alignment
+  atom-beautify
+  autoclose-html
   change-case
   git-blame
   git-plus
