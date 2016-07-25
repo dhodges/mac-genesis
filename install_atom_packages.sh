@@ -12,6 +12,7 @@ packages=(
   atom-beautify
   autoclose-html
   change-case
+  file-icons
   git-blame
   git-plus
   highlight-line
