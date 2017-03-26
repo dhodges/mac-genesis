@@ -17,36 +17,34 @@ echo "updating homebrew cask..."
 brew cask update
 
 apps=(
-    alfred
-    google-chrome
-    firefox
-    iterm2
-    sublime-text
+    alfred2
     atom
     dbvisualizer
-    shiftit
-    xquartz
-    sourcetree
+    firefox
+    google-chrome
+    iterm2
+    java
     screenhero
+    shiftit
+    sourcetree
+    sublime-text
     vagrant
     virtualbox
-    java
+    xquartz
 )
 
 # Install apps to /Applications
 # Default is: /Users/$user/Applications
 echo
 echo "installing apps..."
-brew cask install --appdir="/Applications" ${apps[@]}
-
-# reveal these cask app links to Alfred
-brew cask alfred link
+brew cask install ${apps[@]}
 
 echo
 echo "tapping caskroom/fonts..."
 brew tap caskroom/fonts
 
 fonts=(
+    font-hack
     font-inconsolata
 )
 
