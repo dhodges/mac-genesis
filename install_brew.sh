@@ -18,6 +18,7 @@ binaries=(
   bash # v4
   bash-completion
   bzr
+  clojure
   coreutils
   csshX
   ctags-exuberant

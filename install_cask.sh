@@ -38,6 +38,15 @@ fonts=(
 echo "installing fonts..."
 brew cask install ${fonts[@]}
 
+other_apps=(
+    handbrake
+    musescore
+    vlc
+)
+
+echo "installing other apps..."
+brew cask install ${other_apps[@]}
+
 echo
 echo "cleaning up homebrew..."
 brew cleanup
