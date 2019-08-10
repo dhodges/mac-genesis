@@ -18,25 +18,18 @@ binaries=(
   bash # v4
   bash-completion
   bzr
-  clojure
   coreutils
   csshX
   ctags-exuberant
   emacs
   findutils # find, locate, updatedb, xargs
   git
-  go
   gpg
   hub
-  node
   openssl
   postgresql
   postgis
   pstree
-  rbenv
-  rlwrap
-  ruby-build
-  rbenv-bundler
   rlwrap
   terminal-notifier
   tmux
@@ -52,6 +45,39 @@ brew services start emacs
 
 echo "launching postgresql with each startup..."
 brew services start postgresql
+
+apps=(
+    dbvisualizer
+    handbrake
+    musescore
+    iterm2
+    shiftit
+    sourcetree
+    vagrant
+    virtualbox
+    visual-studio-code
+    vlc
+)
+
+echo
+echo "installing apps..."
+brew cask install ${apps[@]}
+
+echo
+echo "tapping caskroom/fonts..."
+brew tap caskroom/fonts
+
+fonts=(
+    font-camingocode
+    font-dejavusansmono-nerd-font-mono
+    font-firamono-nerd-font-mono
+    font-hack
+    font-inconsolata
+    font-profont-nerd-font-mono
+)
+
+echo "installing fonts..."
+brew cask install ${fonts[@]}
 
 echo
 echo "cleaning up homebrew..."

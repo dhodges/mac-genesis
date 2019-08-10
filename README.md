@@ -1,11 +1,11 @@
 
 ### Description
 
-Mac development setup. Primarily my needs for work.
+Mac development setup. A bunch of shell scripts, loosely tied together with Homebrew.
 
 Deliberately brain-dead simple. Each script just iterates over a short list.
 
-First install XCode (this will take a while)
+First install XCode. (This will take a while).
 
 NB: For  High Sierra (10.13.6), download XCode 10.1 from here:
     https://developer.apple.com/download/more
@@ -15,24 +15,14 @@ https://en.wikipedia.org/wiki/Xcode#10.x_series
 
 Then run these:
 ```
-$ ./install_brew.sh
-$ ./install_cask.sh
-$ ./install_repos.sh
-$ ./install_rubies.sh
+$ ./1.install_brew.sh
+$ ./2.install_langs.sh
+$ ./3.install_repos.sh
+$ gpg -d prefs.tgz.gpg > prefs.tgz && tar zxvf prefs.tgz   # password for gpg is in LastPass
+$ ./4.install_preferences.sh
 ```
 
-Then run these:
-```
-# password for gpg is in LastPass
-
-$ gpg -d prefs.tgz.gpg > prefs.tgz && tar zxvf prefs.tgz
-$ ./install_preferences.sh
-$ ./install_sublime_preferences.sh
-```
-
-Then restart.
-
-Then profit.
+Then restart, and profit.
 
 ### Manual Steps, post-install
 
@@ -47,9 +37,6 @@ Then profit.
 
   - in System Preferences / Mission Control
     - disable keyboard shortcuts (e.g, Ctrl-right, Ctrl-left)
-
-  - in System Preferences / Keyboard / Shortcuts
-    - disable keyboard shortcuts
 
 ### Prior Art
 
