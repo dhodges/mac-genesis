@@ -11,8 +11,6 @@ cp $PREFS_DIR/com.apple.Terminal.plist    ~/Library/Preferences
 [[ -d ~/.dbvis ]] || cp -rf $PREFS_DIR/_dbvis ~/.dbvis
 
 files=(
-    com.runningwithcrayons.Alfred-Preferences.plist
-    com.runningwithcrayons.alfred-2.plist
     org.shiftitapp.ShiftIt.plist
 )
 
@@ -21,15 +19,10 @@ for file in ${files[@]}; do
 done
 
 # postgresql config
-PG_DIR=/usr/local/var/postgres/
-[[ -f $PG_DIR/postgresql.conf ]] && mv $PG_DIR/postgresql.conf $PG_DIR/postgresql.conf.bak
-cp $PREFS_DIR/postgresql.conf $PG_DIR
+#PG_DIR=/usr/local/var/postgres/
+#[[ -f $PG_DIR/postgresql.conf ]] && mv $PG_DIR/postgresql.conf $PG_DIR/postgresql.conf.bak
+#cp $PREFS_DIR/postgresql.conf $PG_DIR
 
 echo
 echo "done."
-echo
-echo "to launch postgresql on startup:"
-echo "launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-echo
-echo "(NB: do NOT run 'sudo launchctl...')"
 echo

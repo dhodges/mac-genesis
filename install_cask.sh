@@ -10,31 +10,17 @@ fi
 echo "updating homebrew..."
 brew update
 
-echo "installing homebrew cask..."
-brew install caskroom/cask/brew-cask
-
-echo "updating homebrew cask..."
-brew cask update
-
 apps=(
-    alfred2
-    atom
     dbvisualizer
-    firefox
-    google-chrome
     iterm2
     java
-    screenhero
     shiftit
     sourcetree
-    sublime-text
     vagrant
     virtualbox
-    xquartz
+    visual-studio-code
 )
 
-# Install apps to /Applications
-# Default is: /Users/$user/Applications
 echo
 echo "installing apps..."
 brew cask install ${apps[@]}
@@ -46,7 +32,13 @@ brew tap caskroom/fonts
 fonts=(
     font-hack
     font-inconsolata
+    font-profont-nerd-font-mono
 )
 
 echo "installing fonts..."
 brew cask install ${fonts[@]}
+
+echo
+echo "cleaning up homebrew..."
+brew cleanup
+echo

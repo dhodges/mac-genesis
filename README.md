@@ -5,7 +5,15 @@ Mac development setup. Primarily my needs for work.
 
 Deliberately brain-dead simple. Each script just iterates over a short list.
 
-First run these:
+First install XCode (this will take a while)
+
+NB: For  High Sierra (10.13.6), download XCode 10.1 from here:
+    https://developer.apple.com/download/more
+
+For XCode/macos version compatibilities:
+https://en.wikipedia.org/wiki/Xcode#10.x_series
+
+Then run these:
 ```
 $ ./install_brew.sh
 $ ./install_cask.sh

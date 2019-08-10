@@ -1,6 +1,6 @@
 #!/bin/bash
 
-rubies="1.9.3-p392  2.0.0-p353  2.1.0  2.1.1  2.1.5  2.2.2"
+rubies="2.4.6 2.5.5 2.6.3"
 
 echo
 echo "checking ruby..."

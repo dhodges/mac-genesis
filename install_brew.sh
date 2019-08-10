@@ -10,11 +10,6 @@ fi
 echo "updating homebrew..."
 brew update
 
-echo "tapping homebrew..."
-brew tap homebrew/versions
-brew tap homebrew/boneyard
-brew tap homebrew/dupes
-
 binaries=(
   ack
   ag
@@ -23,7 +18,6 @@ binaries=(
   bash # v4
   bash-completion
   bzr
-  cheat
   coreutils
   csshX
   ctags-exuberant
@@ -32,9 +26,6 @@ binaries=(
   git
   go
   gpg
-  gpg-agent
-  homebrew/dupes/grep
-  hg
   hub
   node
   openssl
@@ -45,9 +36,7 @@ binaries=(
   rlwrap
   ruby-build
   rbenv-bundler
-  redis
   rlwrap
-  shellcheck
   terminal-notifier
   tmux
   watch
@@ -56,36 +45,14 @@ binaries=(
 
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
-brew linkapps
 
-echo "installing coffee-script (via npm)"
-npm install -g coffee-script
+echo "launching emacs with each startup..."
+brew services start emacs
 
-echo
-echo "Linking postgresql to launch on login:"
-
-LAUNCH_DIR=~/Library/LaunchAgents
-[[ -f $LAUNCH_DIR/homebrew.mxcl.postgresql.plist ]] && rm $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
-ln -sfv /usr/local/opt/postgresql/homebrew.mxcl.postgresql.plist $LAUNCH_DIR/homebrew.mxcl.postgresql.plist
+echo "launching postgresql with each startup..."
+brew services start postgresql
 
 echo
 echo "cleaning up homebrew..."
 brew cleanup
-
-echo
-echo "To launch apache on startup:"
-echo "    sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist"
-echo
-echo "To install passenger:"
-echo "    cd atlas"
-echo "    gem install passenger -v 5.0.20"
-echo "    passenger-install-apache2-module"
-echo "    export EXTRA_CFLAGS='-I/usr/local/opt/openssl/include'"
-echo "    export EXTRA_CXXFLAGS='-I/usr/local/opt/openssl/include'"
-echo "    export EXTRA_LDFLAGS='-L/usr/local/opt/openssl/lib'"
-echo "    sudo apachectl -k restart"
-echo
-echo "Some python essentials may also help:"
-echo "    sudo easy_install pip"
-echo "    sudo pip install virtualenvwrapper"
 echo
