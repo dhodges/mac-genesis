@@ -10,6 +10,9 @@ fi
 echo "updating homebrew..."
 brew update
 
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk8
+
 langs=(
     clojure
     go
