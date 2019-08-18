@@ -21,6 +21,7 @@ code --install-extension orta.vscode-jest
 code --install-extension robinbentley.sass-indented
 code --install-extension sysoev.vscode-open-in-github
 code --install-extension waderyan.gitblame
+code --install-extension wmaurer.change-case
 
 echo
 echo "done."
