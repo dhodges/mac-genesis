@@ -64,8 +64,8 @@ echo "installing apps..."
 brew cask install ${apps[@]}
 
 echo
-echo "tapping caskroom/fonts..."
-brew tap caskroom/fonts
+echo "tapping homebrew/cask-fonts..."
+brew tap homebrew/cask-fonts
 
 fonts=(
     font-camingocode
