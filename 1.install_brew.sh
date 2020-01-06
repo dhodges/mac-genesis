@@ -32,6 +32,7 @@ binaries=(
   pstree
   rlwrap
   terminal-notifier
+  tldr
   tmux
   watch
   wget
