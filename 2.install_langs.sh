@@ -41,3 +41,8 @@ for rv in $ruby_versions; do
     echo
   fi
 done
+
+# go get -u github.com/go-delve/delve/cmd/dlv
+# go get -v github.com/mdempsky/gocode
+# go get -v github.com/uudashr/gopkgs/cmd/gopkgs
+# go get -v github.com/sqs/goreturns
