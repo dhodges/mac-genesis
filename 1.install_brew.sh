@@ -75,6 +75,7 @@ fonts=(
     font-hack
     font-inconsolata
     font-profont-nerd-font-mono
+    font-source-code-pro
 )
 
 echo "installing fonts..."
