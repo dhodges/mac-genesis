@@ -16,6 +16,7 @@ code --install-extension christian-kohler.npm-intellisense
 code --install-extension gerane.theme-solarized-dark
 code --install-extension gerane.theme-solarized-light
 code --install-extension leizongmin.node-module-intellisense
+code --install-extension ms-vscode.go
 code --install-extension naumovs.color-highlight
 code --install-extension orta.vscode-jest
 code --install-extension robinbentley.sass-indented
