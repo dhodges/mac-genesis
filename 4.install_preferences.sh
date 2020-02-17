@@ -12,16 +12,23 @@ cp $PREFS_DIR/com.apple.Terminal.plist    ~/Library/Preferences
 [[ -f ~/Library/Preferences/org.shiftitapp.ShiftIt.plist ]] || ln -sfv $PREFS_DIR/$file
 
 echo "VSCode extensions"
-code --install-extension christian-kohler.npm-intellisense
+code --install-extension castwide.solargraph
+#code --install-extension christian-kohler.npm-intellisense
 code --install-extension gerane.theme-solarized-dark
 code --install-extension gerane.theme-solarized-light
-code --install-extension leizongmin.node-module-intellisense
-code --install-extension ms-vscode.go
+code --install-extension ginfuru.ginfuru-better-solarized-dark-theme
+code --install-extension jemmyw.rails-fast-nav
+code --install-extension jnbt.vscode-rufo
+#code --install-extension leizongmin.node-module-intellisense
+code --install-extension misogi.ruby-rubocop
+#code --install-extension ms-vscode.go
 code --install-extension naumovs.color-highlight
-code --install-extension orta.vscode-jest
-code --install-extension robinbentley.sass-indented
+#code --install-extension orta.vscode-jest
+code --install-extension rebornix.ruby
+code --install-extension sdras.night-owl
 code --install-extension sysoev.vscode-open-in-github
 code --install-extension waderyan.gitblame
+code --install-extension wingrunr21.vscode-ruby
 code --install-extension wmaurer.change-case
 
 echo
