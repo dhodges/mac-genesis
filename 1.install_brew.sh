@@ -14,21 +14,17 @@ binaries=(
   ack
   ag
   autoenv
-  awscli
   bash # v4
   bash-completion
   bzr
   coreutils
   csshX
   ctags-exuberant
-  emacs
   findutils # find, locate, updatedb, xargs
   git
   gpg
   hub
   openssl
-  postgresql
-  postgis
   pstree
   rlwrap
   terminal-notifier
@@ -41,17 +37,17 @@ binaries=(
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
 
-echo "launching emacs with each startup..."
-brew services start emacs
 
-echo "launching postgresql with each startup..."
-brew services start postgresql
+brew tap daviderestivo/emacs-head
+brew install emacs-head --HEAD --with-jansson
+brew services start emacs-head
+
 
 apps=(
     dbvisualizer
+    flux
     handbrake
     musescore
-    iterm2
     shiftit
     sourcetree
     vagrant
@@ -70,11 +66,11 @@ brew tap homebrew/cask-fonts
 
 fonts=(
     font-camingocode
-    font-dejavusansmono-nerd-font-mono
-    font-firamono-nerd-font-mono
+    font-dejavusansmono-nerd-font
+    font-firamono-nerd-font
     font-hack
     font-inconsolata
-    font-profont-nerd-font-mono
+    font-profont-nerd-font
     font-source-code-pro
 )
 
