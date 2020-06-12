@@ -26,6 +26,7 @@ binaries=(
   hub
   openssl
   pstree
+  ripgrep
   rlwrap
   terminal-notifier
   tldr
