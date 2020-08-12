@@ -21,7 +21,6 @@ binaries=(
   coreutils
   csshX
   ctags-exuberant
-  emacs
   findutils # find, locate, updatedb, xargs
   git
   gpg
@@ -41,8 +40,12 @@ binaries=(
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
 
+echo "installing emacs-plus"
+brew tap d12frosted/emacs-plus
+brew install emacs-plus --with-jansson
+
 echo "launching emacs with each startup..."
-brew services start emacs
+brew services start emacs-plus
 
 echo "launching postgresql with each startup..."
 brew services start postgresql
