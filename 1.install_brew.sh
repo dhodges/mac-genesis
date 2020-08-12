@@ -14,7 +14,6 @@ binaries=(
   ack
   ag
   autoenv
-  awscli
   bash # v4
   bash-completion
   bzr
@@ -26,9 +25,8 @@ binaries=(
   gpg
   hub
   openssl
-  postgresql
-  postgis
   pstree
+  ripgrep
   rlwrap
   terminal-notifier
   tldr
@@ -47,14 +45,11 @@ brew install emacs-plus --with-jansson
 echo "launching emacs with each startup..."
 brew services start emacs-plus
 
-echo "launching postgresql with each startup..."
-brew services start postgresql
-
 apps=(
     dbvisualizer
+    flux
     handbrake
     musescore
-    iterm2
     shiftit
     sourcetree
     vagrant
@@ -73,11 +68,11 @@ brew tap homebrew/cask-fonts
 
 fonts=(
     font-camingocode
-    font-dejavusansmono-nerd-font-mono
-    font-firamono-nerd-font-mono
+    font-dejavusansmono-nerd-font
+    font-firamono-nerd-font
     font-hack
     font-inconsolata
-    font-profont-nerd-font-mono
+    font-profont-nerd-font
     font-source-code-pro
 )
 

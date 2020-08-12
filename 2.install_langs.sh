@@ -15,7 +15,6 @@ brew cask install adoptopenjdk8
 
 langs=(
     clojure
-    go
     leiningen
     node
     rbenv
@@ -26,7 +25,7 @@ langs=(
 echo "installing languages..."
 brew install ${langs[@]}
 
-ruby_versions="2.4.6 2.5.5 2.6.3"
+ruby_versions="2.5.8"
 
 echo
 echo "checking ruby versions..."
