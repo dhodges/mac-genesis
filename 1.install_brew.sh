@@ -50,7 +50,7 @@ apps=(
     flux
     handbrake
     musescore
-    shiftit
+    rectangle
     sourcetree
     vagrant
     virtualbox
