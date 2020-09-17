@@ -52,6 +52,7 @@ apps=(
     musescore
     rectangle
     sourcetree
+    transmission
     vagrant
     virtualbox
     visual-studio-code
