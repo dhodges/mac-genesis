@@ -73,6 +73,7 @@ fonts=(
     font-firamono-nerd-font
     font-hack
     font-inconsolata
+    font-juliamono
     font-profont-nerd-font
     font-source-code-pro
 )
