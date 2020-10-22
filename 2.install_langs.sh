@@ -13,6 +13,9 @@ brew update
 brew tap adoptopenjdk/openjdk
 brew cask install adoptopenjdk8
 
+echo "symlinking openjdk..."
+sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+
 langs=(
     clojure
     leiningen
