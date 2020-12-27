@@ -79,7 +79,7 @@ fonts=(
 )
 
 echo "installing fonts..."
-brew cask install ${fonts[@]}
+brew install ${fonts[@]}
 
 echo
 echo "cleaning up homebrew..."
