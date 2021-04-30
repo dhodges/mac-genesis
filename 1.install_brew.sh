@@ -76,6 +76,8 @@ fonts=(
     font-inconsolata
     font-juliamono
     font-profont-nerd-font
+    font-roboto-mono
+    font-roboto-mono-nerd-font
     font-source-code-pro
 )
 
