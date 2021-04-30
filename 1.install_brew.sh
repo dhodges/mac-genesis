@@ -28,6 +28,7 @@ binaries=(
   pstree
   ripgrep
   rlwrap
+  svn # needed for the occasional brew package
   terminal-notifier
   tldr
   tmux
