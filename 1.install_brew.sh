@@ -21,6 +21,7 @@ binaries=(
   csshX
   ctags-exuberant
   findutils # find, locate, updatedb, xargs
+  fzf
   git
   gpg
   hub
@@ -35,6 +36,9 @@ binaries=(
   watch
   wget
 )
+
+# fzf: install key bindings and fuzzy completion
+$(brew --prefix)/opt/fzf/install --all
 
 echo "installing homebrew binaries..."
 brew install ${binaries[@]}
