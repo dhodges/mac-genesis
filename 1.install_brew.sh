@@ -20,6 +20,7 @@ binaries=(
   coreutils
   csshX
   ctags-exuberant
+  fd
   findutils # find, locate, updatedb, xargs
   fzf
   git
