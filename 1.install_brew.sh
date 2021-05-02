@@ -16,6 +16,7 @@ binaries=(
   autoenv
   bash # v4
   bash-completion
+  bat
   bzr
   coreutils
   csshX
