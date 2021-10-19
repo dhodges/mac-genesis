@@ -10,12 +10,6 @@ fi
 echo "updating homebrew..."
 brew update
 
-brew tap adoptopenjdk/openjdk
-brew cask install adoptopenjdk8
-
-echo "symlinking openjdk..."
-sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
-
 langs=(
     clojure
     leiningen
@@ -29,6 +23,17 @@ echo "installing languages..."
 brew install ${langs[@]}
 
 ruby_versions="2.5.8"
+echo
+echo "installing java"
+echo
+
+brew install jenv
+export PATH=~/.jenv/bin:$PATH
+eval "$(jenv init -)"
+brew install --cask temurin
+jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/
+jenv global 17
+
 
 echo
 echo "checking ruby versions..."
