@@ -22,7 +22,6 @@ langs=(
 echo "installing languages..."
 brew install ${langs[@]}
 
-ruby_versions="2.5.8"
 echo
 echo "installing java"
 echo
@@ -34,6 +33,7 @@ brew install --cask temurin
 jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/
 jenv global 17
 
+ruby_versions="2.6.8"
 
 echo
 echo "checking ruby versions..."
