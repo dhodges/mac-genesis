@@ -47,7 +47,8 @@ brew install ${binaries[@]}
 
 echo "installing emacs-plus"
 brew tap d12frosted/emacs-plus
-brew install emacs-plus --with-jansson
+brew uninstall emacs-plus # maintainer of emacs-plus recommends against reinstall
+brew install emacs-plus@28 --with-native-comp
 
 echo "launching emacs with each startup..."
 brew services start emacs-plus
