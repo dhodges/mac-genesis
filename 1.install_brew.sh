@@ -47,20 +47,18 @@ brew install ${binaries[@]}
 
 echo "installing emacs-plus"
 brew tap d12frosted/emacs-plus
-brew uninstall emacs-plus # maintainer of emacs-plus recommends against reinstall
+#brew uninstall emacs-plus # maintainer of emacs-plus recommends against reinstall
 brew install emacs-plus@28 --with-native-comp
 
 echo "launching emacs with each startup..."
-brew services start emacs-plus
+brew services start emacs-plus@28
 
 apps=(
     dbvisualizer
-    flux
-    handbrake
+    firefox
     musescore
     rectangle
     sourcetree
-    transmission
     vagrant
     virtualbox
     visual-studio-code
@@ -69,7 +67,17 @@ apps=(
 
 echo
 echo "installing apps..."
-brew cask install ${apps[@]}
+brew install ${apps[@]}
+
+casks=(
+    /homebrew/cask/flux
+    /homebrew/cask/handbrake
+    /homebrew/cask/transmission
+)
+
+echo
+echo "installing casks..."
+brew install ${casks[@]}
 
 echo
 echo "tapping homebrew/cask-fonts..."
@@ -77,8 +85,6 @@ brew tap homebrew/cask-fonts
 
 fonts=(
     font-camingocode
-    font-dejavusansmono-nerd-font
-    font-firamono-nerd-font
     font-hack
     font-inconsolata
     font-juliamono
