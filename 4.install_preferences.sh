@@ -13,13 +13,7 @@ cp $PREFS_DIR/com.apple.Terminal.plist    ~/Library/Preferences
 
 echo "VSCode extensions"
 code --install-extension castwide.solargraph
-code --install-extension gerane.theme-solarized-dark
-code --install-extension gerane.theme-solarized-light
-code --install-extension jemmyw.rails-fast-nav
-code --install-extension jnbt.vscode-rufo
-code --install-extension misogi.ruby-rubocop
 code --install-extension naumovs.color-highlight
-code --install-extension rebornix.ruby
 code --install-extension sdras.night-owl
 code --install-extension sysoev.vscode-open-in-github
 code --install-extension waderyan.gitblame
