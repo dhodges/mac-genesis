@@ -25,6 +25,7 @@ binaries=(
   findutils # find, locate, updatedb, xargs
   fzf
   git
+  gh
   gpg
   hub
   openssl
