@@ -7,96 +7,41 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+echo
 echo "updating homebrew..."
 brew update
 
-binaries=(
-  ack
-  ag
-  autoenv
-  bash # v4
-  bash-completion
-  bat
-  bzr
-  coreutils
-  csshX
-  ctags-exuberant
-  fd
-  findutils # find, locate, updatedb, xargs
-  fzf
-  git
-  gh
-  gpg
-  hub
-  openssl
-  pstree
-  ripgrep
-  rlwrap
-  svn # needed for the occasional brew package
-  terminal-notifier
-  tldr
-  tmux
-  watch
-  wget
-)
+brew bundle # use ./Brewfile
 
-# fzf: install key bindings and fuzzy completion
+echo
+echo "installing fzf key bindings and fuzzy completion..."
 $(brew --prefix)/opt/fzf/install --all
 
-echo "installing homebrew binaries..."
-brew install ${binaries[@]}
+echo
+echo "installing java"
+echo
+brew install jenv
+export PATH=~/.jenv/bin:$PATH
+eval "$(jenv init -)"
+brew install --cask temurin
+jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/
+jenv global 17
 
-echo "installing emacs-plus"
-brew tap d12frosted/emacs-plus
-#brew uninstall emacs-plus # maintainer of emacs-plus recommends against reinstall
-brew install emacs-plus@28 --with-native-comp
-
-echo "launching emacs with each startup..."
-brew services start emacs-plus@28
-
-apps=(
-    dbvisualizer
-    firefox
-    musescore
-    rectangle
-    sourcetree
-    vagrant
-    virtualbox
-    visual-studio-code
-    vlc
-)
+ruby_versions="2.6.8"
 
 echo
-echo "installing apps..."
-brew install ${apps[@]}
-
-casks=(
-    /homebrew/cask/flux
-    /homebrew/cask/handbrake
-    /homebrew/cask/transmission
-)
-
+echo "checking ruby versions..."
 echo
-echo "installing casks..."
-brew install ${casks[@]}
 
-echo
-echo "tapping homebrew/cask-fonts..."
-brew tap homebrew/cask-fonts
-
-fonts=(
-    font-camingocode
-    font-hack
-    font-inconsolata
-    font-juliamono
-    font-profont-nerd-font
-    font-roboto-mono
-    font-roboto-mono-nerd-font
-    font-source-code-pro
-)
-
-echo "installing fonts..."
-brew install ${fonts[@]}
+for rv in $ruby_versions; do
+  if `rbenv versions | grep $rv > /dev/null`; then
+    echo "ruby $v installed"
+  else
+    echo "installing ruby $rv..."
+    rbenv install $rv
+    echo
+  fi
+done
 
 echo
 echo "cleaning up homebrew..."

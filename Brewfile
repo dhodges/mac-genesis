@@ -29,16 +29,34 @@ brew "tmux"
 brew "watch"
 brew "wget"
 
+tap "d12frosted/emacs-plus"
+brew "emacs-plus@28", args: ["with-native-comp"], restart_service: :changed
+
+# langs
+
+brew "clojure"
+brew "jenv"
+brew "leiningen"
+brew "node"
+brew "python@3.9"
+brew "rbenv"
+brew "rbenv-bundler"
+brew "ruby-build"
+
+
+tap "homebrew/cask"
+
 cask "dbvisualizer"
 cask "firefox"
 cask "musescore"
 cask "rectangle"
 cask "sourcetree"
 cask "vagrant"
-cask "virtualbox"
+#cask "virtualbox" # 2021-11-24 still only intel, hasn't been ported to M1
 cask "visual-studio-code"
 cask "vlc"
 
+cask "balenaetcher"
 
 cask "flux"
 cask "handbrake"

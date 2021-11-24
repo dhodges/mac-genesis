@@ -1,9 +1,8 @@
-
+TAGS
 atlas_apache_2.4_config
 atlas_apache_2.4_config.tbz
-prefs
-prefs/*
-prefs.tgz
 dev_notes.txt
-TAGS
+prefs
 prefs.tar
+prefs.tgz
+prefs/*

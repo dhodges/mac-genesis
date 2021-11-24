@@ -11,15 +11,6 @@ cp $PREFS_DIR/com.apple.Terminal.plist    ~/Library/Preferences
 
 [[ -f ~/Library/Preferences/org.shiftitapp.ShiftIt.plist ]] || ln -sfv $PREFS_DIR/$file
 
-echo "VSCode extensions"
-code --install-extension castwide.solargraph
-code --install-extension naumovs.color-highlight
-code --install-extension sdras.night-owl
-code --install-extension sysoev.vscode-open-in-github
-code --install-extension waderyan.gitblame
-code --install-extension wingrunr21.vscode-ruby
-code --install-extension wmaurer.change-case
-
 echo
 echo "done."
 echo
