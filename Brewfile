@@ -32,7 +32,7 @@ brew "wget"
 tap "d12frosted/emacs-plus"
 brew "emacs-plus@28", args: ["with-native-comp"], restart_service: :changed
 
-# langs
+# langs and development
 
 brew "clojure"
 brew "jenv"
@@ -42,7 +42,9 @@ brew "python@3.9"
 brew "rbenv"
 brew "rbenv-bundler"
 brew "ruby-build"
+brew "postgresql"
 
+# apps
 
 tap "homebrew/cask"
 
