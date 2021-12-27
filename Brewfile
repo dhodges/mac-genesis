@@ -39,10 +39,15 @@ brew "jenv"
 brew "leiningen"
 brew "node"
 brew "python@3.9"
+brew "flake8"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "poetry"
 brew "rbenv"
 brew "rbenv-bundler"
 brew "ruby-build"
 brew "postgresql"
+brew "virtualenv"
 
 # apps
 
