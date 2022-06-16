@@ -55,6 +55,7 @@ tap "homebrew/cask"
 
 cask "dbvisualizer"
 cask "firefox"
+cask "google-chrome"
 cask "musescore"
 cask "rectangle"
 cask "sourcetree"
