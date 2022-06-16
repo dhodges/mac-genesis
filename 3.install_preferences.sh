@@ -11,6 +11,9 @@ cp $PREFS_DIR/com.apple.Terminal.plist    ~/Library/Preferences
 
 [[ -f ~/Library/Preferences/org.shiftitapp.ShiftIt.plist ]] || ln -sfv $PREFS_DIR/$file
 
+defaults write com.apple.screencapture disable-shadow -bool true; killall SystemUIServer
+defaults write com.apple.screencapture type jpg; killall SystemUIServer
+
 echo
 echo "done."
 echo
