@@ -4,7 +4,7 @@
 
 if test ! $(which brew); then
   echo "installing homebrew..."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 echo
@@ -27,7 +27,7 @@ brew install --cask temurin
 jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/
 jenv global 17
 
-ruby_versions="2.6.8"
+ruby_versions="2.6.8 2.7.6"
 
 echo
 echo "checking ruby versions..."
