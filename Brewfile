@@ -12,6 +12,7 @@ brew "bzr"
 brew "coreutils"
 brew "csshX"
 brew "ctags-exuberant"
+brew "ctop"
 brew "fd"
 brew "findutils" # find, locate, updatedb, xargs
 brew "fzf"
@@ -53,7 +54,9 @@ brew "virtualenv"
 
 tap "homebrew/cask"
 
+cask "chromedriver"
 cask "dbvisualizer"
+cask "docker"
 #cask "firefox"
 #cask "google-chrome"
 cask "insomnia"
