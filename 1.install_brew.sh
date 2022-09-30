@@ -24,8 +24,8 @@ brew install jenv
 export PATH=~/.jenv/bin:$PATH
 eval "$(jenv init -)"
 brew install --cask temurin
-jenv add /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/
-jenv global 17
+jenv add /Library/Java/JavaVirtualMachines/temurin-18.jdk/Contents/Home/
+jenv global 18
 
 ruby_versions="2.6.8 2.7.6"
 
