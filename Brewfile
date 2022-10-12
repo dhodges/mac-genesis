@@ -8,7 +8,9 @@ brew "autoenv"
 brew "bash"
 brew "bash-completion"
 brew "bat"
+brew "bfg"
 brew "bzr"
+brew "cmake"
 brew "coreutils"
 brew "csshX"
 brew "ctags-exuberant"
@@ -49,6 +51,9 @@ brew "rbenv-bundler"
 brew "ruby-build"
 brew "postgresql@14"
 brew "virtualenv"
+
+#tap "zendesk/zendesk git@github.com:zendesk/homebrew-zendesk.git"
+#brew ""
 
 # apps
 
