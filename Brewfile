@@ -5,6 +5,7 @@
 brew "ack"
 brew "ag"
 brew "autoenv"
+brew "automake"
 brew "bash"
 brew "bash-completion"
 brew "bat"
