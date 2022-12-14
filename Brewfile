@@ -49,12 +49,12 @@ brew "pyenv-virtualenv"
 brew "poetry"
 brew "rbenv"
 brew "rbenv-bundler"
+brew "ruby@2.7"
 brew "ruby-build"
 brew "postgresql@14"
 brew "virtualenv"
 
 #tap "zendesk/zendesk git@github.com:zendesk/homebrew-zendesk.git"
-#brew ""
 
 # apps
 
@@ -65,6 +65,7 @@ cask "dbvisualizer"
 cask "docker"
 #cask "firefox"
 #cask "google-chrome"
+cask "github"
 cask "insomnia"
 cask "iterm2"
 cask "musescore"
