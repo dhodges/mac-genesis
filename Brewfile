@@ -23,6 +23,7 @@ brew "fzf"
 brew "git"
 brew "gpg"
 brew "hub"
+brew "libgccjit"
 brew "libidn"
 brew "mysql"
 brew "openssl"
@@ -38,7 +39,7 @@ brew "watch"
 brew "wget"
 
 tap "d12frosted/emacs-plus"
-brew "emacs-plus@28", args: ["with-native-comp"], restart_service: :changed
+brew "emacs-plus@29", args: ["with-imagemagick"], restart_service: :changed
 
 # langs and development
 
