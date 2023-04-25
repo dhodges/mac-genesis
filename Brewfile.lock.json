@@ -2049,15 +2049,15 @@
         }
       },
       "ruby-build": {
-        "version": "20230330",
+        "version": "20230424",
         "bottle": {
           "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "all": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/ruby-build/blobs/sha256:46cbe621049964cb42e680c80661983ebe55116850821fb759c7c6018e37aac9",
-              "sha256": "46cbe621049964cb42e680c80661983ebe55116850821fb759c7c6018e37aac9"
+              "url": "https://ghcr.io/v2/homebrew/core/ruby-build/blobs/sha256:512f46b78a70f1f48fe1a040968ef2d7a1958ef4eff2600b8a33956d4be94150",
+              "sha256": "512f46b78a70f1f48fe1a040968ef2d7a1958ef4eff2600b8a33956d4be94150"
             }
           }
         }
@@ -2156,10 +2156,10 @@
         "revision": "c74ac0b0425d4d25e42e74de03977c07a0e76fff"
       },
       "homebrew/cask": {
-        "revision": "e23c504b4e438bfde8ee8f6c2c8a370c8192dee7"
+        "revision": "4943192dbb83d89b033d58eecba9f6410a95979c"
       },
       "homebrew/cask-fonts": {
-        "revision": "74dd198ffaeadef00ba29a91f7b3a64e705e990d"
+        "revision": "834afcc92079c275bf254a5682da3c079a1780c5"
       }
     },
     "cask": {
@@ -2330,8 +2330,8 @@
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.14",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_VERSION": "4.0.15",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",
         "Xcode": "14.3",
