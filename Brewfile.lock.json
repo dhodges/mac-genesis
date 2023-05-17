@@ -1322,45 +1322,45 @@
         }
       },
       "svn": {
-        "version": "1.14.2_1",
+        "version": "1.14.2_2",
         "bottle": {
-          "rebuild": 2,
+          "rebuild": 0,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_ventura": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:2a9a5e70f1fbaa17eeef6bb50376371c3a851b7a9a4b4603221c1fd14c54fc7f",
-              "sha256": "2a9a5e70f1fbaa17eeef6bb50376371c3a851b7a9a4b4603221c1fd14c54fc7f"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:3bcbf68fa0d9ac280ccb8e4f99f3adfae51e03159375f9a423f1f85e2d1b2a7e",
+              "sha256": "3bcbf68fa0d9ac280ccb8e4f99f3adfae51e03159375f9a423f1f85e2d1b2a7e"
             },
             "arm64_monterey": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:da10671ff8bd10ab4032572c40963d60ddaa57feae1b6f09df6d9626bfd8496d",
-              "sha256": "da10671ff8bd10ab4032572c40963d60ddaa57feae1b6f09df6d9626bfd8496d"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:92228d98c4bb2dcbbe0330c18ec1fbf92489b55eb2656e1508405cc61b14f1c5",
+              "sha256": "92228d98c4bb2dcbbe0330c18ec1fbf92489b55eb2656e1508405cc61b14f1c5"
             },
             "arm64_big_sur": {
               "cellar": "/opt/homebrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:8944bdee4668b9750e8a1aa250eab73033ecbd1870d12e492637de25dd6251cc",
-              "sha256": "8944bdee4668b9750e8a1aa250eab73033ecbd1870d12e492637de25dd6251cc"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:09a3d7a535e71aeddf74165fbda423616e398ce4802122f89ff0ff76a0768592",
+              "sha256": "09a3d7a535e71aeddf74165fbda423616e398ce4802122f89ff0ff76a0768592"
             },
             "ventura": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:de4cc446ee4d782f3a1c44e078fd8644bbe321e6cbf275b7db78eed22a122448",
-              "sha256": "de4cc446ee4d782f3a1c44e078fd8644bbe321e6cbf275b7db78eed22a122448"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:275c55dd67ea3fdf79bb617c5e4a2f8d491208e16d4780a0b8cef4153c8ae8ad",
+              "sha256": "275c55dd67ea3fdf79bb617c5e4a2f8d491208e16d4780a0b8cef4153c8ae8ad"
             },
             "monterey": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:a29ab2cecb13316b6dc44e3ce0f9f3dc9bcc9484abaca2aac2984d1d89e2fc17",
-              "sha256": "a29ab2cecb13316b6dc44e3ce0f9f3dc9bcc9484abaca2aac2984d1d89e2fc17"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:cb013b4827080de7a0c52f6419f1bef1b6e2e1e9e90e42965e18a60f8cd0ef47",
+              "sha256": "cb013b4827080de7a0c52f6419f1bef1b6e2e1e9e90e42965e18a60f8cd0ef47"
             },
             "big_sur": {
               "cellar": "/usr/local/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:d24d68286d208a2294bf6e4e722aae60bed9574d827ca25354b12dccd8ef8ed7",
-              "sha256": "d24d68286d208a2294bf6e4e722aae60bed9574d827ca25354b12dccd8ef8ed7"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:5620a6783cbd9082a83a9ef2ccea7f53bdf7eb40e96a45b2f2dbaca0bde5dbb9",
+              "sha256": "5620a6783cbd9082a83a9ef2ccea7f53bdf7eb40e96a45b2f2dbaca0bde5dbb9"
             },
             "x86_64_linux": {
               "cellar": "/home/linuxbrew/.linuxbrew/Cellar",
-              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:f3b735902067cdd7733ceac8310689236b4fe403205787bcbbc9ee7bced85968",
-              "sha256": "f3b735902067cdd7733ceac8310689236b4fe403205787bcbbc9ee7bced85968"
+              "url": "https://ghcr.io/v2/homebrew/core/subversion/blobs/sha256:e49be8ddb0ec7fab245f94c33aae7a8289613ab3e61dd9905f5cef53a959a9e8",
+              "sha256": "e49be8ddb0ec7fab245f94c33aae7a8289613ab3e61dd9905f5cef53a959a9e8"
             }
           }
         }
@@ -2148,13 +2148,13 @@
     },
     "tap": {
       "d12frosted/emacs-plus": {
-        "revision": "e5d554fb0be433ab35023985bdb8a76d3dc7b604"
+        "revision": "c28150477651c03b55048f9f3edc82caec861a73"
       },
       "homebrew/cask": {
-        "revision": "e23c504b4e438bfde8ee8f6c2c8a370c8192dee7"
+        "revision": "4943192dbb83d89b033d58eecba9f6410a95979c"
       },
       "homebrew/cask-fonts": {
-        "revision": "d6a879aa4e8b63e5871662b66c2f6bf85c83dca8"
+        "revision": "d1ac34c2e2b0a8120497fc832e78a0dd0fae623c"
       }
     },
     "cask": {
@@ -2225,7 +2225,7 @@
         }
       },
       "sourcetree": {
-        "version": "4.2.2,250",
+        "version": "4.2.3,252",
         "options": {
           "full_name": "sourcetree"
         }
@@ -2319,14 +2319,20 @@
         "options": {
           "full_name": "font-source-code-pro"
         }
+      },
+      "racket": {
+        "version": "8.8",
+        "options": {
+          "full_name": "racket"
+        }
       }
     }
   },
   "system": {
     "macos": {
       "ventura": {
-        "HOMEBREW_VERSION": "4.0.16",
-        "HOMEBREW_PREFIX": "/usr/local",
+        "HOMEBREW_VERSION": "4.0.17",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "14.3.0.0.1.1679647830",
         "Xcode": "14.3",
