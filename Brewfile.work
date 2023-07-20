@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# see: https://github.com/Homebrew/homebrew-bundle
+
+tap "zendesk/devops", "git@github.com:zendesk/homebrew-devops.git"
+
+brew "mermaid-cli"
+brew "tm"
+
+tap "homebrew/cask"
+
+cask "chromedriver"
+cask "insomnia"
+cask "mysqlworkbench"
+cask "postman"
+cask "proxyman"
