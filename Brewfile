@@ -40,6 +40,7 @@ brew "terminal-notifier"
 brew "tldr"
 brew "tmux"
 brew "watch"
+brew "webp"
 brew "wget"
 brew "webpack"
 
