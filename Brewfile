@@ -10,7 +10,6 @@ brew "bash"
 brew "bash-completion"
 brew "bat"
 brew "bfg"
-brew "bzr"
 brew "cmake"
 brew "coreutils"
 brew "csshX"
@@ -68,8 +67,6 @@ brew "virtualenv"
 #tap "zendesk/zendesk git@github.com:zendesk/homebrew-zendesk.git"
 
 # apps
-
-tap "homebrew/cask"
 
 #cask "firefox"
 #cask "google-chrome"
