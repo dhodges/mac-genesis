@@ -4,8 +4,8 @@
 
 tap "zendesk/devops", "git@github.com:zendesk/homebrew-devops.git"
 
-brew "mermaid-cli"
-brew "tm"
+brew "k9s"
+brew "zendesk/devops/tm"
 
 tap "homebrew/cask"
 
