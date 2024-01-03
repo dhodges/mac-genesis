@@ -52,6 +52,7 @@ brew "emacs-plus@29", args: ["with-imagemagick"], restart_service: :changed
 # langs and development
 
 brew "clojure"
+brew "golang"
 brew "jenv"
 brew "leiningen"
 brew "node"
