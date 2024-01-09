@@ -17,6 +17,7 @@ brew "csshX"
 brew "ctags-exuberant"
 brew "ctop"
 brew "curl"
+brew "direnv"
 brew "fd"
 brew "findutils" # find, locate, updatedb, xargs
 brew "fzf"
