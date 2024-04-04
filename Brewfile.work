@@ -5,13 +5,11 @@
 tap "zendesk/devops", "git@github.com:zendesk/homebrew-devops.git"
 
 brew "k9s"
+brew "zen"
 brew "zendesk/devops/tm"
-
-tap "homebrew/cask"
 
 cask "chromedriver"
 cask "insomnia"
 cask "mysqlworkbench"
 cask "postman"
-cask "proxyman"
 cask "google-cloud-sdk"

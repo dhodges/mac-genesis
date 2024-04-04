@@ -2,7 +2,7 @@
   "entries": {
     "tap": {
       "zendesk/devops": {
-        "revision": "35ff873becff3d8a367923bb2ea464b204d49d51",
+        "revision": "faff64dd8289fe874e60a5a3dcb6c9eb369b90d2",
         "options": {
           "clone_target": "git@github.com:zendesk/homebrew-devops.git"
         }
@@ -60,29 +60,81 @@
             }
           }
         }
+      },
+      "k9s": {
+        "version": "0.32.4",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "arm64_sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:2d424d36274b60bd09d990dedcbb545b4d8c6bb530d3f9d66c3a7dbf33ef5568",
+              "sha256": "2d424d36274b60bd09d990dedcbb545b4d8c6bb530d3f9d66c3a7dbf33ef5568"
+            },
+            "arm64_ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:28cecc07e880c1af196a8198ec24fb082510b6d9a5a3d053b60cb5ebd254aed0",
+              "sha256": "28cecc07e880c1af196a8198ec24fb082510b6d9a5a3d053b60cb5ebd254aed0"
+            },
+            "arm64_monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:ee84d34293a7ce5990b966229f68439dcd836cef826e516628475b63d45f0526",
+              "sha256": "ee84d34293a7ce5990b966229f68439dcd836cef826e516628475b63d45f0526"
+            },
+            "sonoma": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:eb09ea22822d3ebd325508c82c7ce03d22fc5bbf50c79badc314a1add84ac194",
+              "sha256": "eb09ea22822d3ebd325508c82c7ce03d22fc5bbf50c79badc314a1add84ac194"
+            },
+            "ventura": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:6da7494321cd1c95a962bb7c1574e4410587b818b19ac24d40049c8e23ef6893",
+              "sha256": "6da7494321cd1c95a962bb7c1574e4410587b818b19ac24d40049c8e23ef6893"
+            },
+            "monterey": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:78ed14ec6d891bed80303a9fdc7104ff8173b1c611b6ff0e120fb8eb63c64dbc",
+              "sha256": "78ed14ec6d891bed80303a9fdc7104ff8173b1c611b6ff0e120fb8eb63c64dbc"
+            },
+            "x86_64_linux": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/k9s/blobs/sha256:10ace44273e20be410dce5456010fabc3a5393229b5c4084fc7468fa5689e251",
+              "sha256": "10ace44273e20be410dce5456010fabc3a5393229b5c4084fc7468fa5689e251"
+            }
+          }
+        }
+      },
+      "zen": {
+        "version": "1.28.34",
+        "bottle": false
+      },
+      "zendesk/devops/tm": {
+        "version": "0.6.12",
+        "bottle": false
       }
     },
     "cask": {
       "chromedriver": {
-        "version": "114.0.5735.90",
+        "version": "123.0.6312.86",
         "options": {
           "full_name": "chromedriver"
         }
       },
       "insomnia": {
-        "version": "2023.4.0",
+        "version": "8.6.1",
         "options": {
           "full_name": "insomnia"
         }
       },
       "mysqlworkbench": {
-        "version": "8.0.34",
+        "version": "8.0.36",
         "options": {
           "full_name": "mysqlworkbench"
         }
       },
       "postman": {
-        "version": "10.16.0",
+        "version": "10.24.16",
         "options": {
           "full_name": "postman"
         }
@@ -91,6 +143,12 @@
         "version": "4.9.0,49000",
         "options": {
           "full_name": "proxyman"
+        }
+      },
+      "google-cloud-sdk": {
+        "version": "471.0.0",
+        "options": {
+          "full_name": "google-cloud-sdk"
         }
       }
     }
@@ -104,6 +162,14 @@
         "CLT": "14.3.1.0.1.1683849156",
         "Xcode": "14.3.1",
         "macOS": "13.4.1"
+      },
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.2.16",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.3.0.0.1.1708646388",
+        "Xcode": "15.3",
+        "macOS": "14.4.1"
       }
     }
   }
