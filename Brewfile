@@ -71,9 +71,9 @@ brew "yarn"
 
 # apps
 
-cask "docker"
+cask "docker-desktop"
 cask "github"
-cask "handbrake"
+cask "handbrake-app"
 cask "iterm2"
 cask "postman"
 cask "rectangle"
@@ -81,7 +81,7 @@ cask "sourcetree"
 cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
-cask "wireshark"
+cask "wireshark-app"
 
 cask "font-camingocode"
 cask "font-hack"
