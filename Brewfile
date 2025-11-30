@@ -9,7 +9,6 @@ brew "automake"
 brew "bash"
 brew "bash-completion"
 brew "bat"
-brew "bfg"
 brew "bzt"
 brew "cmake"
 brew "coreutils"
@@ -40,6 +39,7 @@ brew "svn" # needed for the occasional brew package
 brew "terminal-notifier"
 brew "tldr"
 brew "tmux"
+brew "tree"
 brew "watch"
 brew "webp"
 brew "wget"
@@ -48,16 +48,15 @@ brew "yamllint"
 brew "yq"
 
 tap "d12frosted/emacs-plus"
-brew "emacs-plus@29", args: ["with-imagemagick"], restart_service: :changed
+brew "emacs-plus", args: ["with-imagemagick"], restart_service: :changed
 
 # langs and development
 
 brew "clojure"
 brew "golang"
-brew "jenv"
 brew "leiningen"
 brew "node"
-brew "python@3.9"
+brew "python@3.14"
 brew "flake8"
 brew "pyenv"
 brew "pyenv-virtualenv"
@@ -81,7 +80,6 @@ cask "sourcetree"
 cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
-cask "wireshark-app"
 
 cask "font-camingocode"
 cask "font-hack"
