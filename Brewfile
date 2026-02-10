@@ -46,6 +46,8 @@ brew "emacs-plus", args: ["with-imagemagick"], restart_service: :changed
 
 # langs and development
 
+cask "claude-code"
+
 brew "python@3.14"
 brew "postgresql@18"
 # brew "rbenv"
