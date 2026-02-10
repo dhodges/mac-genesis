@@ -25,7 +25,9 @@ Then restart, and profit.
 
   - set the hostname:
     ```
-    $ sudo set_hostname interceptor
+    $ sudo scutil --set HostName <name>
+    $ sudo scutil --set LocalHostName <name>
+    $ sudo scutil --set ComputerName <name>
     ```
 
   - enable ShiftIt under: `System Preferences / Security & Privacy / Privacy / Accessibility`.

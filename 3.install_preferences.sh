@@ -12,9 +12,6 @@ cp $PREFS_DIR/vscode_user_settings.json  "~/Library/Application Support/Code/Use
 
 [[ -f ~/Library/Preferences/org.shiftitapp.ShiftIt.plist ]] || ln -sfv $PREFS_DIR/$file
 
-defaults write com.apple.screencapture disable-shadow -bool true; killall SystemUIServer
-defaults write com.apple.screencapture type jpg; killall SystemUIServer
-
 echo
 echo "done."
 echo
