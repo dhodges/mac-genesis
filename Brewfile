@@ -57,7 +57,6 @@ brew "postgresql@18"
 cask "github"
 cask "handbrake-app"
 cask "iterm2"
-cask "rectangle"
 cask "transmission"
 cask "visual-studio-code"
 
