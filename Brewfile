@@ -50,9 +50,6 @@ cask "claude-code"
 
 brew "python@3.14"
 brew "postgresql@18"
-# brew "rbenv"
-# brew "rbenv-bundler"
-# brew "ruby-build"
 
 # apps
 
