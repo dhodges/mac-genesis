@@ -22,6 +22,7 @@ brew "docker-compose"
 brew "fd"
 brew "findutils" # find, locate, updatedb, xargs
 brew "fzf"
+brew "gemini-cli"
 brew "gh"
 brew "git"
 brew "gpg"
