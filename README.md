@@ -23,6 +23,11 @@ Then restart, and profit.
 
 ### Manual Steps, post-install
 
+  - Change the default shell
+    ```
+    chsh -s /bin/bash
+    ```
+
   - set the hostname:
     ```
     $ sudo scutil --set HostName <name>
@@ -30,6 +35,6 @@ Then restart, and profit.
     $ sudo scutil --set ComputerName <name>
     ```
 
-  - enable ShiftIt under: `System Preferences / Security & Privacy / Privacy / Accessibility`.
+  - open Rectangle and set "Launch on login" in settings
 
-  - map CapsLock to Ctrl
+  - map CapsLock to Ctrl: `System Preferences / Customize modifier keys`
