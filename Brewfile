@@ -64,7 +64,6 @@ brew "postgresql@18"
 
 # apps
 
-# cask "docker-desktop"
 cask "github"
 cask "handbrake-app"
 cask "handy"
