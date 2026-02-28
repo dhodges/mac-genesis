@@ -65,6 +65,7 @@ brew "postgresql@18"
 # apps
 
 cask "github"
+cask "google-chrome"
 cask "handbrake-app"
 cask "handy"
 cask "iterm2"
