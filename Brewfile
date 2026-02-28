@@ -52,12 +52,12 @@ brew "webpack"
 brew "yamllint"
 brew "yq"
 
-tap "d12frosted/emacs-plus"
-brew "emacs-plus", args: ["with-imagemagick"], restart_service: :changed
-
 # langs and development
 
 cask "claude-code"
+
+tap "d12frosted/emacs-plus"
+cask "emacs-app"
 
 brew "python@3.14"
 brew "postgresql@18"
