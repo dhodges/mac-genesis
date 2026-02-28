@@ -69,6 +69,7 @@ cask "google-chrome"
 cask "handbrake-app"
 cask "handy"
 cask "iterm2"
+cask "rectangle"
 cask "transmission"
 cask "visual-studio-code"
 
