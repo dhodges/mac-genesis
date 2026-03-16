@@ -19,6 +19,7 @@ brew "curl"
 brew "direnv"
 brew "docker"
 brew "docker-compose"
+brew "emacs"
 brew "fd"
 brew "findutils" # find, locate, updatedb, xargs
 brew "fzf"
@@ -56,9 +57,6 @@ brew "yq"
 # langs and development
 
 cask "claude-code"
-
-tap "d12frosted/emacs-plus"
-cask "emacs-app"
 
 brew "python@3.14"
 brew "postgresql@18"
