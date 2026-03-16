@@ -43,6 +43,7 @@ brew "svn" # needed for the occasional brew package
 brew "tldr"
 brew "tmux"
 brew "tree"
+brew "tsc"
 brew "ty"
 brew "uv"
 brew "watch"
@@ -64,6 +65,7 @@ brew "postgresql@18"
 
 # apps
 
+cask "claudebar"
 cask "github"
 cask "google-chrome"
 cask "handbrake-app"
