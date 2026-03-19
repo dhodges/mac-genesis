@@ -64,6 +64,7 @@ brew "postgresql@18"
 # apps
 
 brew "gromgit/brewtils/taproom"
+brew "mole"
 
 cask "claudebar"
 cask "github"
