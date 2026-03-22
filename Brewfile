@@ -67,6 +67,7 @@ brew "gromgit/brewtils/taproom"
 brew "mole"
 
 cask "claudebar"
+cask "dbvisualizer"
 cask "github"
 cask "google-chrome"
 cask "handbrake-app"
