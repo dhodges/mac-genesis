@@ -76,7 +76,7 @@ cask "handy"
 cask "iterm2"
 cask "rectangle"
 cask "transmission"
-cask "visual-studio-code"
+cask "vscodium"
 
 cask "font-camingocode"
 cask "font-hack"
