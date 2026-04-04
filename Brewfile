@@ -55,6 +55,7 @@ brew "wget"
 brew "webpack"
 brew "yamllint"
 brew "yq"
+brew "zellij"
 
 # langs and development
 
