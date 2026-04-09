@@ -69,7 +69,7 @@ brew "postgresql@18"
 
 brew "gromgit/brewtils/taproom"
 brew "mole"
-
+brew "ollama"
 brew "anomalyco/tap/opencode"
 
 cask "claudebar"
