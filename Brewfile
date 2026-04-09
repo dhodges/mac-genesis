@@ -70,6 +70,8 @@ brew "postgresql@18"
 brew "gromgit/brewtils/taproom"
 brew "mole"
 
+brew "anomalyco/tap/opencode"
+
 cask "claudebar"
 cask "dbvisualizer"
 cask "github"
