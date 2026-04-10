@@ -47,7 +47,6 @@ brew "svn" # needed for the occasional brew package
 brew "tldr"
 brew "tmux"
 brew "tree"
-brew "trivy"
 brew "tsc"
 brew "ty"
 brew "uv"
@@ -70,10 +69,6 @@ brew "postgresql@18"
 
 brew "gromgit/brewtils/taproom"
 brew "mole"
-brew "ollama"
-brew "anomalyco/tap/opencode"
-
-brew "hudochenkov/sshpass/sshpass"
 
 cask "claudebar"
 cask "dbvisualizer"
