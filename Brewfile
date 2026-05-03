@@ -81,6 +81,8 @@ brew "anomalyco/tap/opencode"
 
 brew "hudochenkov/sshpass/sshpass"
 
+cask "nikitabobko/tap/aerospace"
+
 cask "claudebar"
 cask "dbvisualizer"
 cask "github"
