@@ -24,7 +24,6 @@ brew "emacs"
 brew "fd"
 brew "findutils" # find, locate, updatedb, xargs
 brew "fzf"
-brew "gemini-cli"
 brew "gh"
 brew "git"
 brew "glow"
@@ -40,16 +39,18 @@ brew "loki"
 brew "lzlib"
 brew "mandown"
 brew "man-db"
+brew "mole"
 brew "msmtp"
 brew "node"
+brew "ollama"
 brew "openssl"
-brew "pi-coding-agent"
 brew "pstree"
 brew "ripgrep"
 brew "rlwrap"
 brew "readline"
 brew "ruff"
 brew "shellcheck"
+brew "hudochenkov/sshpass/sshpass"
 brew "svn" # needed for the occasional brew package
 brew "tldr"
 brew "tmux"
@@ -69,17 +70,14 @@ brew "zellij"
 # langs and development
 
 cask "claude-code"
+brew "gemini-cli"
+brew "anomalyco/tap/opencode"
+brew "pi-coding-agent"
 
 brew "python@3.14"
 brew "postgresql@18"
 
 # apps
-
-brew "mole"
-brew "ollama"
-brew "anomalyco/tap/opencode"
-
-brew "hudochenkov/sshpass/sshpass"
 
 cask "claudebar"
 cask "dbvisualizer"
@@ -91,6 +89,8 @@ cask "iterm2"
 cask "rectangle"
 cask "transmission"
 cask "vscodium"
+
+# fonts
 
 cask "font-camingocode"
 cask "font-hack"
