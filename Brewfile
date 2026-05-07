@@ -75,7 +75,6 @@ brew "postgresql@18"
 
 # apps
 
-brew "gromgit/brewtils/taproom"
 brew "mole"
 brew "ollama"
 brew "anomalyco/tap/opencode"
