@@ -81,6 +81,7 @@ brew "postgresql@18"
 # apps
 
 cask "claudebar"
+cask "steipete/tap/codexbar"
 cask "dbvisualizer"
 cask "github"
 cask "google-chrome"
