@@ -70,6 +70,7 @@ brew "zellij"
 
 # langs and development
 
+cask "antigravity-cli"
 cask "claude-code"
 brew "gemini-cli"
 brew "anomalyco/tap/opencode"
