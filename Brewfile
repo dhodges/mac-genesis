@@ -30,6 +30,7 @@ brew "glow"
 brew "gpg"
 brew "htop"
 brew "hub"
+brew "imagemagick"
 brew "jq"
 brew "just"
 brew "libgccjit"
@@ -70,19 +71,19 @@ brew "zellij"
 
 # langs and development
 
+brew "python@3.14"
+brew "postgresql@18"
+
+# ai
+
 cask "antigravity-cli"
 cask "claude-code"
 brew "gemini-cli"
 brew "anomalyco/tap/opencode"
 brew "pi-coding-agent"
 
-brew "python@3.14"
-brew "postgresql@18"
-
 # apps
 
-cask "claudebar"
-cask "steipete/tap/codexbar"
 cask "dbvisualizer"
 cask "github"
 cask "google-chrome"
@@ -90,9 +91,14 @@ cask "handbrake-app"
 cask "handy"
 cask "iterm2"
 cask "obsidian"
-cask "rectangle"
 cask "transmission"
 cask "vscodium"
+
+# menu bar
+
+cask "claudebar"
+cask "rectangle"
+cask "darrylmorley/whatcable/whatcable"
 
 # fonts
 
