@@ -77,6 +77,7 @@ brew "postgresql@18"
 # ai
 
 cask "antigravity-cli"
+cask "claude"
 cask "claude-code"
 brew "gemini-cli"
 brew "anomalyco/tap/opencode"
