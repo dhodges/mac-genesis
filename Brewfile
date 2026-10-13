@@ -80,8 +80,6 @@ cask "antigravity-cli"
 cask "claude"
 cask "claude-code"
 brew "gemini-cli"
-brew "anomalyco/tap/opencode"
-brew "pi-coding-agent"
 
 # apps
 
