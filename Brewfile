@@ -79,7 +79,6 @@ brew "postgresql@18"
 cask "antigravity-cli"
 cask "claude"
 cask "claude-code"
-brew "gemini-cli"
 
 # apps
 
